@@ -3,38 +3,25 @@
 <head>
   <title>Project</title>
 
+  <!--
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+   dzieki temu mamy mozliwosc dodania ikonki wyszukiwania ale my uzylismy gemu font-awesome-sass -->
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--
-  Znacznik powyżej
-  Znacznik dla użądzen mobilnych
+  Znacznik powyżej dla użądzen mobilnych
   chodzi o to - ze rozmair roboczego obszaru ma sie dostosowac do uządzenie i początkowa szerokość to 1
   -->
 
 </head>
 <body>
 
-<!-- glowny kontener -->
-<div id="main-container">
-
-  <!-- Nawigacja -->
-  <header>
-    <nav>
-      <div class="container">
-        <div class="navbar">
-          <div class="nav-logo">
-            <a href=""><img src="<%= asset_path('logo.png') %>" alt="logo" width="50"></a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-</div>
-
+  <%=  render 'layouts/header' %>
 
 <%= yield %>
 
