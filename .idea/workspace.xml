@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="775238f2-c710-4fe7-914b-a2850703ea46" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/desktop.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
     </list>
     <ignored path="Project.iws" />
@@ -50,8 +48,8 @@
       <file leaf-file-name="_header.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59375">
-              <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.6644022">
+              <caret line="179" column="12" selection-start-line="179" selection-start-column="12" selection-end-line="179" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -131,7 +129,7 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="698" />
+    <option name="x" value="871" />
     <option name="y" value="23" />
     <option name="width" value="1160" />
     <option name="height" value="849" />
@@ -539,7 +537,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="698" y="23" width="1160" height="849" extended-state="0" />
+    <frame x="871" y="23" width="1160" height="849" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27280858" sideWeight="0.49553" order="0" side_tool="false" content_ui="tabs" />
@@ -934,8 +932,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59375">
-          <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.6644022">
+          <caret line="179" column="12" selection-start-line="179" selection-start-column="12" selection-end-line="179" selection-end-column="12" />
           <folding />
         </state>
       </provider>
