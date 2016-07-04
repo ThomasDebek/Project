@@ -1,1 +1,32 @@
-$test: #F00;
+// Kolory dla tekstu
+$basic-text-color: #888;
+$basic-header-color: #434343;
+$bright-text-color: #D4D4D4;
+$brightest-text-color: #FFF;
+$menu-link-color: #3A3C43;
+
+// Kolor akcentu
+$accent-color: #45B6AF;        // Zielono-niebieski
+
+// Ramki
+$basic-border-color: #DDD;
+
+// Boxy portfolio
+$box-portfolio-background: fade($accent-color,85%);  // Tu pobiezemy nasz kolor akcentu i obnizymy ten kolor o 85%
+
+// Kolory tła
+$basic-background: #FFF;                // Podstawowe tlo
+$alternate-background: #EEE;            // Alternatywne tlo - kolor szary
+$footer-background: #43444D;            // Glowene tlo dla  stopki
+$footer-copyright-background: #31323A;  // Tlo dla ostatniej sekcji stopi - czyli domieszki kolorow
+
+// Stopka
+$footer-social-borders: #535353;        // obramowania koloru ikonek serwisów spolecznosciowych
+$footer-social-icons: #EBEBEB;          // kolor wlasciwych ikon  - odcien koloru szarego
+$footer-post-date: #B4B4B4;             // data wpisu na liście blokowej tej daty - bedzie niewielka różnica pomiędzy kolorami
+
+// Slider
+$slider-control-background: #C2C2C2;    // W slajderze wystepuje kolor tla w kontrolce-kropce slidera
+
+// Opinie
+$opinions-text: #A6A6A6;                //  slider ktory wyswietla opinnie klientow, tez szary i troszeczke inny od bazowego koloru
