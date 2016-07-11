@@ -29,10 +29,10 @@
 }
 
 // wyrowanie w pionie
-.center-vertical {
+.center-vertical {     //wysrodkownie w pionie
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 50%;            // przesuniecie o 50 od gornej krawedzi
+  transform: translateY(-50%);   // ale zeby przesunąć obiekt wzgledem jego wlasnego srodka
 }
 
 // Widocznosc
@@ -46,4 +46,51 @@
 
 .block {
   display: block;
+}
+
+
+// rozmiary w pionie jak i w poziomie
+.absolute-one-hundred-size {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+// SPRAWDZIC CZY DZIALA
+
+
+
+ .size($width, $height) {   // wysokosci i szerokosc z parametrami
+ -width: $width;
+ -height: $height;
+}
+
+
+// Listy
+.list-style-none {
+  list-style-type: none;
+}
+
+// Ramki
+.section-border-top($border-color: $basic-border-color) {
+  -border-top-width: 1px;
+  -border-top-style: solid;
+  -border-top-color: $border-color;
+}
+
+.section-border-bottom($border-color: $basic-border-color) {
+  -border-bottom-width: 1px;
+  -border-bottom-style: solid;
+  -border-bottom-color: $border-color;
 }
