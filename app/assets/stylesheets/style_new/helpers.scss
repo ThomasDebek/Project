@@ -19,12 +19,12 @@
 }
 
 .center-no-float {
-  .float-none;
-  .center-text;
+  @extend .float-none;
+  @extend .center-text;
 }
 
 .no-center-float {
-  .float-left;
+  @extend .float-left;
   text-align: initial;
 }
 
@@ -71,9 +71,9 @@
 
 
 
- .size($width, $height) {   // wysokosci i szerokosc z parametrami
- -width: $width;
- -height: $height;
+ @mixin size($width, $height) {   // wysokosci i szerokosc z parametrami
+ width: $width;
+ height: $height;
 }
 
 
@@ -83,14 +83,14 @@
 }
 
 // Ramki
-.section-border-top($border-color: $basic-border-color) {
-  -border-top-width: 1px;
-  -border-top-style: solid;
-  -border-top-color: $border-color;
+@mixin section-border-top($border-color: $basic-border-color) {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: $border-color;
 }
 
-.section-border-bottom($border-color: $basic-border-color) {
-  -border-bottom-width: 1px;
-  -border-bottom-style: solid;
-  -border-bottom-color: $border-color;
+@mixin section-border-bottom($border-color: $basic-border-color) {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: $border-color;
 }
