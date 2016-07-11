@@ -67,7 +67,7 @@
 
 
 
-// SPRAWDZIC CZY DZIALA
+// SPRAWDZIC CZY DZIALA - it works
 
 
 
@@ -94,3 +94,42 @@
   border-bottom-style: solid;
   border-bottom-color: $border-color;
 }
+
+
+
+// Elementy plywajace   - czyli style do naprawiania elementow plywajacych
+
+@mixin overflow-fix  {   //
+  overflow: auto;         // to pozwoli nam naprawic problemy z wysokoscią elementu ktory ma w srodku divy
+}
+
+@mixin clearfix {        // Sluzy do naprawaiania wysokosci kontenera z elementami plywajacymi
+  &:after {              // Ampersend i pseldoelementy
+    content: "";         // Musi byc z pustą wartoscia
+    display: table;      // wyswietalany musi byc jako tabela
+    clear: both;         // musi posiadac wlasciwosc clear z wartoscią
+  }
+}                        // Ten mixin bedziemy mogli dodac w różnych miejscach
+
+
+
+
+
+// ukrywanie - nie po przez usówanie tulko przez zmienienie ich krycia
+
+@mixin hide {    // czyli urkyj
+  opacity: 0;    // element ktory krycie ma ustawiony na 0
+}
+
+@mixin show {
+  opacity: 1;   // czyli pelene krycie
+}
+
+// narozniki   - zaokrąglone
+@mixin border-radius-single($radius) {     // single czyli identyczne zaokrąglenie na wszystkich narożnikach
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+
