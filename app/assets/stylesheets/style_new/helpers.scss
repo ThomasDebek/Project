@@ -50,7 +50,7 @@
 
 
 // rozmiary w pionie jak i w poziomie
-.absolute-one-hundred-size {
+@mixin absolute-one-hundred-size {
   position: absolute;
   top: 0;
   left: 0;
@@ -133,3 +133,48 @@
 }
 
 
+
+
+
+
+
+
+// podstawowe przejscie 0.2s    // czyli na przycisku - hover (opakujemy je domieszką)
+
+@mixin basic-transition {
+  transition: all 0.2s ease-in-out;   // wszytkie wlasciwosci, 2dziesiate sekundy i miekkie p[rzejscie
+}
+
+
+
+// Zmienne przjscie
+
+@mixin variable-transition($length) {   // Zmienne przejscie
+  transition: all $length ease-in-out;
+}
+
+
+
+
+
+
+
+// Translate 3D   // w pewnych miejscach bede musial zmieniac obiekty we wszystkich 3osiach
+
+@mixin translate3d ($move-x, $move-y, $move-z) {   //przesuniescie w osi x y z
+  transform: translateX($move-x);
+  transform: translateY($move-y);
+  transform: translateZ($move-z);
+}
+
+
+
+
+//Nakladka  dla przygaszenia koloru filmu wideoo -parallaxa
+
+@mixin dark-overlay {   // doslownie ciemna nakladak
+  content: "";          // musi byc pusty element
+  z-index: 0;           // poczatkowa warstosc zero
+  @include absolute-one-hundred-size;
+  background: none repeat 0 0 rgba(30, 30, 30, 0.5);
+}
