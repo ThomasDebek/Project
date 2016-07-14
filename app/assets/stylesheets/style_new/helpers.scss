@@ -58,19 +58,6 @@
   height: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-// SPRAWDZIC CZY DZIALA - it works
-
-
-
  @mixin size($width, $height) {   // wysokosci i szerokosc z parametrami
  width: $width;
  height: $height;
@@ -131,12 +118,6 @@
   -moz-border-radius: $radius;
   -webkit-border-radius: $radius;
 }
-
-
-
-
-
-
 
 
 // podstawowe przejscie 0.2s    // czyli na przycisku - hover (opakujemy je domieszką)

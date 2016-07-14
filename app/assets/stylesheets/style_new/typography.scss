@@ -1,0 +1,18 @@
+
+@import "colors";
+
+// zmienne tekst
+$basic-font-size: 13px;
+$basic-line-height: 24px;
+$paragraph-margin: 0 0 15px;
+
+// Mixin naglowki  uzywamy nasze tzw. praprocesory
+@mixin header-mixin($header-font-size, $header-margin-bottom, $header-color: $basic-header-color) {
+  font-size: $header-font-size;
+  margin-top: 0;   // margines gorny zawsze zero
+  margin-left: 0;   // marg. z lewej takze zero
+  margin-right: 0;  // marg. prawyy  takze
+  margin-bottom: $header-margin-bottom;   // tutaj mamy tak - bo nasz margines w czesci dolnej bedzie sie po prostu zmienial
+  color: $header-color;   // kolor to oczywsicie paramtetr i damy mu tutuaj parametr
+  font-weight: 400;     // definjuje to poprostu na sztywno 
+}
