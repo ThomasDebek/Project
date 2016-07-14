@@ -44,3 +44,9 @@ h3 {
  @include header-mixin(18px, 18px);
 }
 
+
+
+// 8.Media_queries
+// Chodzi nam aby nasz projekt nad którym pracujemy byl wpelni responsywny
+// Tak ze wielu miejscach mojej strony mamy kolumny a chcemy zeby byly zwijane do jednej
+// I do tego uzyjemy bibloteki media
