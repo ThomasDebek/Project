@@ -1,7 +1,7 @@
 
 @import "colors";
 
-// zmienne tekst
+// zmienne tekstu
 $basic-font-size: 13px;
 $basic-line-height: 24px;
 $paragraph-margin: 0 0 15px;
@@ -16,3 +16,31 @@ $paragraph-margin: 0 0 15px;
   color: $header-color;   // kolor to oczywsicie paramtetr i damy mu tutuaj parametr
   font-weight: 400;     // definjuje to poprostu na sztywno 
 }
+
+
+// font font    - to nasza rodzina fontów - gdzie podpielismy dwa fonty lato i openfonts
+// zdefinujmy sobie style textu
+$font-family-primary: "Open Sans", sans-serif;   // czyli taka rodzima frrma czcionek
+$font-family-secondary: "Lato", sans-serif;
+
+
+// style tekstu
+body {
+  font-size: $basic-font-size;
+  font-family: $font-family-primary;
+  color: $basic-text-color;
+}
+
+p {
+  margin: $paragraph-margin;
+  line-height: $basic-line-height;
+}
+
+h2 {
+ @include header-mixin(24px, 12px);
+}
+
+h3 {
+ @include header-mixin(18px, 18px);
+}
+
