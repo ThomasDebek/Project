@@ -3,11 +3,16 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+
+
+@import "style_new/grid";     // Tu naszego grida do latwego stworzenia siatki kolumn
+
 @import "style_new/reset";    // Wchodzimy na githuba reset.scss  https://gist.github.com/hcatlin/1027867  dzieki temu zresetujemy style we wszystkich przeglądarkach
 @import "style_new/colors";
 @import "style_new/helpers";
 
 @import "style_new/typography";
+@import "style_new/styles";
 
 
 
