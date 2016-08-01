@@ -1,11 +1,21 @@
 // Teraz bedziemy tu pracowac i to nasz takie nasze glowne style
 
-
 // siatka kolumn, nadpiszemy liczbe zmiennych
-$columns: 12;        // Damy tu 12 kolum, czyli kolumny beda sie dzielily na 3, na 4, na 6 ale zawsze przez 12 sa podzielne
-$column-width: 65;   // Szerokosc kolumny
-$gutter-width: 30;   // Odstepy miedzy kolumnami
-$total-width: 100%;  // Musi ona posiadac wartosc 100% wtedy automatycznie bedą sie dopasywaly kolumny do viewsportu]
+$columns: 12; // Damy tu 12 kolum, czyli kolumny beda sie dzielily na 3, na 4, na 6 ale zawsze przez 12 sa podzielne
+$column-width: 65; // Szerokosc kolumny
+$gutter-width: 30; // Odstepy miedzy kolumnami
+$total-width: 100%; // Musi ona posiadac wartosc 100% wtedy automatycznie bedą sie dopasywaly kolumny do viewsportu]
 
 //
 
+@import "typography";
+@import "helpers";
+@import "grid";
+
+.our-services .single-col {
+  @include column(12);
+  media: $tablet {
+    @include column(6);
+  }
+
+}

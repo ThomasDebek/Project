@@ -1,6 +1,16 @@
 // Dodamy wlasciowosci ktore powtarzaja sie czesto
 // Np; ramki, obramowania powtarzające sie wlasciowci
 
+
+
+// zmienne dla użadzen
+$phone: "only screen and (min-width: 768px)";
+$tablet: "only screen and (min-width: 992px)";
+$desktop: "only screen and (min-width: 1200px)";
+
+
+
+
 // Wyrownanie, pozycjowanie  Podstawowe sterowanie
 .center-text {
   text-align: center;
