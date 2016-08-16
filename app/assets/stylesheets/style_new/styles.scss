@@ -26,9 +26,26 @@ $total-width: 100%; // Musi ona posiadac wartosc 100% wtedy automatycznie bedą 
   }
 }
 
-
-
 .statistics .single-col {
+  @include column(3);
+  media: $phone {
+    @include column(12);
+  }
+
+}
+
+
+.our-team .single-col {
+  @include column(4);
+  media: $tablet {
+    @include column(12);
+  }
+}
+
+
+
+
+.footer-main .single-col {
   @include column(3);
   media: $phone {
     @include column(12);
@@ -40,29 +57,21 @@ $total-width: 100%; // Musi ona posiadac wartosc 100% wtedy automatycznie bedą 
 
 
 
-
-
-.our-team .single-col {
-  @include column(12);
-  media: $tablet {
-    @include column(4);
-  }
-}
-
-.footer-main .single-col {
-  @include column(6);
-  media: $phone {
-    @include column(12);
-  }
-  media: $tablet {
-    @include column(3);
-  }
-}
-
 // Kontener
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  clear: both;
-  padding: 0 15px;
+  max-width: 1200px;  //nasza maksymalna szerokosc
+  margin: 0 auto;     // nasz margines gora dol zero - boki -auto
+  clear: both;        // elementy plywajace
+  padding: 0 15px;     // odsetepy gora dol zero, a od lewej i prawej 15px
+}
+
+
+// Inne elementy
+img {
+  max-width: 100%;
+  vertical-align: middle;  //widok pod obrazkiem - skaluje sie od malego do duzego
+}
+
+a {
+  text-decoration: none;   //usunmy domyslne podkreslenie tekstu wsrod odnosnikow
 }
