@@ -2,8 +2,8 @@
 
 // siatka kolumn, nadpiszemy liczbe zmiennych
 $columns: 12; // Damy tu 12 kolum, czyli kolumny beda sie dzielily na 3, na 4, na 6 ale zawsze przez 12 sa podzielne
-$column-width: 65; // Szerokosc kolumny
-$gutter-width: 30; // Odstepy miedzy kolumnami
+$column-width: 60px; // Szerokosc kolumny
+$gutter-width: 30px; // Odstepy miedzy kolumnami
 $total-width: 100%; // Musi ona posiadac wartosc 100% wtedy automatycznie bedą sie dopasywaly kolumny do viewsportu]
 
 //
@@ -12,10 +12,53 @@ $total-width: 100%; // Musi ona posiadac wartosc 100% wtedy automatycznie bedą 
 @import "helpers";
 @import "grid";
 
-.our-services .single-col {
-  @include column(12);
+.our-services .single-col    {
+  @include column(3);
   media: $tablet {
-    @include column(6);
+     @include column(12);
   }
+}
 
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  clear: both;
+  padding: 0 15px;
+}
+
+.advantages .single-col {
+  @include column(7);
+  media: $tablet {
+    @include column(12)
+  }
+}
+
+.statistics .single-col {
+  @include column(4);
+  media: $phone {
+    @include column(12);
+  }
+  media: $tablet {
+    @include column(12);
+  }
+}
+
+.our-team .single-col {
+  @include column(4);
+  media: $tablet {
+    @include column(12);
+  }
+}
+
+.footer-main .single-col {
+  @include column(6);
+  media: $phone {
+    @include column(12);
+  }
+  media: $tablet {
+    @include column(3);
+  }
 }
