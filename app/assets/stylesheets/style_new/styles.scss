@@ -100,3 +100,22 @@ a {
 h1, h2 , h3 {
   line-height: 1.1;   //wysokosc linji dla nagółwków -czyli bardzo subtelna zmiana
 }
+
+
+
+// mixin dla przyciskow
+@mixin basic-button($color, $background-color) {
+  color: $color;
+  background-color: $background-color;
+  text-decoration: none;
+  @include inline-block;
+  font-size: $basic-font-size;
+  font-weight: 400;
+  line-height: $basic-line-height;
+  text-transform: uppercase;    // wszystkie przyciski bedą w duzych literach
+}
+
+
+
+
+
