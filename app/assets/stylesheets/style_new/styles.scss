@@ -19,25 +19,17 @@ $total-width: 100%; // Musi ona posiadac wartosc 100% wtedy automatycznie bedą 
   }
 }
 
-
-
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  clear: both;
-  padding: 0 15px;
-}
-
 .advantages .single-col {
-  @include column(7);
+  @include column(4);
   media: $tablet {
     @include column(12)
   }
 }
 
+
+
 .statistics .single-col {
-  @include column(4);
+  @include column(3);
   media: $phone {
     @include column(12);
   }
@@ -46,10 +38,14 @@ $total-width: 100%; // Musi ona posiadac wartosc 100% wtedy automatycznie bedą 
   }
 }
 
+
+
+
+
 .our-team .single-col {
-  @include column(4);
+  @include column(12);
   media: $tablet {
-    @include column(12);
+    @include column(4);
   }
 }
 
@@ -61,4 +57,12 @@ $total-width: 100%; // Musi ona posiadac wartosc 100% wtedy automatycznie bedą 
   media: $tablet {
     @include column(3);
   }
+}
+
+// Kontener
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  clear: both;
+  padding: 0 15px;
 }
