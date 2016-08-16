@@ -94,3 +94,9 @@ a {
   margin-bottom: 40px;   // margines na dole
   @include center-text;
 }
+
+
+// Naglowki
+h1, h2 , h3 {
+  line-height: 1.1;   //wysokosc linji dla nagółwków -czyli bardzo subtelna zmiana
+}
