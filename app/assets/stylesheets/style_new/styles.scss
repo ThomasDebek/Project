@@ -78,9 +78,11 @@ a {
 
 
 
+
+
+
 // Wykluczmy marginesy z elementów tak aby nam nie przeszkadzaly
 // *  - taki selektor który odwołuje sie do wszystkiego na stronie
-
 * {
   box-sizing: border-box;   //efekt pudelka
 }
@@ -88,4 +90,7 @@ a {
 
 // TERAZ TYLY SEKCJI ktore czesto sie przewijają
 
-
+.section-title {
+  margin-bottom: 40px;   // margines na dole
+  @include center-text;
+}

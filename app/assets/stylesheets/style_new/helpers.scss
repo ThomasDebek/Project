@@ -13,7 +13,7 @@ $desktop: "only screen and (min-width: 1200px)";
 
 
 // Wyrownanie, pozycjowanie  Podstawowe sterowanie
-.center-text {
+@mixin center-text {
   text-align: center;
 }
 
@@ -31,7 +31,7 @@ $desktop: "only screen and (min-width: 1200px)";
 
 .center-no-float {
   @extend .float-none;
-  @extend .center-text;
+  @include center-text;
 }
 
 .no-center-float {
