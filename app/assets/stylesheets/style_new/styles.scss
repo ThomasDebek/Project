@@ -75,3 +75,17 @@ img {
 a {
   text-decoration: none;   //usunmy domyslne podkreslenie tekstu wsrod odnosnikow
 }
+
+
+
+// Wykluczmy marginesy z elementów tak aby nam nie przeszkadzaly
+// *  - taki selektor który odwołuje sie do wszystkiego na stronie
+
+* {
+  box-sizing: border-box;   //efekt pudelka
+}
+
+
+// TERAZ TYLY SEKCJI ktore czesto sie przewijają
+
+
