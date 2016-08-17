@@ -136,3 +136,34 @@ header {
     }
   }
 }
+
+
+.main-menu-content {               // Odwoalmy sie do samej klasy
+  @include float-right;            // Przesuniemy wszystko w prawo naszym mixinem
+  @include center-vertical;        // Uzyjemy pomocnej klasy wysrodkowanie w pionie
+  ul {
+    @include list-style-none;      // Wylączymy styl listy
+    li {
+      @include float-left;         // Umiescimy znaczniki obok siebie
+      @include block;              // Elementy muszą byc blokieim
+      a {
+        color: $menu-link-color;
+        font-size: 15px;           // Tu uzyjemy sztywnej wartosci
+        font-family: $font-family-secondary;   // Tu nasze lato
+        font-weight: 400;          // Jest to bazowa waga tekstu
+        padding: 20px 14px;        // gora dol 20 i po bokach 14
+        line-height: 20px;
+        @include basic-transition;  // Przejscie delikatne-bardzo subtelne 2m/s
+        &:hover {                   // Zagniezdzimy wyglad stanu hover
+          color: $accent-color;
+        }
+        media: $tablet {
+        padding: 20px 22px;
+      }
+      }
+      i {
+        font-size: 14px;
+      }
+    }
+  }
+}

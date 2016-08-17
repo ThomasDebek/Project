@@ -55,7 +55,7 @@ $desktop: "only screen and (min-width: 1200px)";
   display: inline-block;
 }
 
-.block {
+@mixin block {
   display: block;
 }
 
@@ -76,7 +76,7 @@ $desktop: "only screen and (min-width: 1200px)";
 
 
 // Listy
-.list-style-none {
+@mixin list-style-none {
   list-style-type: none;
 }
 
