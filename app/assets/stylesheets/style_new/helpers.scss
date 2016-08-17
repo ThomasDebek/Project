@@ -17,30 +17,30 @@ $desktop: "only screen and (min-width: 1200px)";
   text-align: center;
 }
 
-.float-left {
+@mixin float-left {
   float: left;
 }
 
-.float-right {
+@mixin float-right {
   float: right;
 }
 
-.float-none {
+@mixin  float-none {
   float: none;
 }
 
-.center-no-float {
-  @extend .float-none;
+@mixin center-no-float {
+  @include float-none;
   @include center-text;
 }
 
-.no-center-float {
-  @extend .float-left;
+@mixin no-center-float {
+  @include float-left;
   text-align: initial;
 }
 
 // wyrowanie w pionie
-.center-vertical {     //wysrodkownie w pionie
+@mixin center-vertical {     //wysrodkownie w pionie
   position: relative;
   top: 50%;            // przesuniecie o 50 od gornej krawedzi
   transform: translateY(-50%);   // ale zeby przesunąć obiekt wzgledem jego wlasnego srodka

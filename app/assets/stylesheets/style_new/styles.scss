@@ -117,5 +117,22 @@ h1, h2 , h3 {
 
 
 
-
-
+/***  Naglowek ***/
+header {
+  z-index: 1000;
+  position: fixed;   //chce uzskac efekt -tzw. menu przyklejony do górnej krawedzi
+  top: 0;            // musimy powiedziec gdzie ma byc przyczepiony czyli do górnej krawedzi
+  left: 0;           // lewej
+  right: 0;          // prawej
+  background: $basic-background;
+  border-bottom: 1px solid $basic-border-color;  //obramowanie tego menu
+  box-shadow: 0 0 1px $basic-border-color;      // dajmy tez cien, wartosci to przesuniecie w pionie oraza poziomie
+  .navbar {     // teraz inietersuje mnie ta klasa i ustawimy w niej
+    height: 63px; // szerokosc
+    .nav-logo {    //  logo musi byc umieszczone po lewej i wysrodkowanie
+      @include float-left;
+      @include center-vertical;
+      z-index: 2;
+    }
+  }
+}
