@@ -107,9 +107,9 @@ h1, h2 , h3 {
 @mixin basic-button($color, $background-color) {
   color: $color;
   background-color: $background-color;
-  text-decoration: none;
-  @include inline-block;
-  font-size: $basic-font-size;
+  text-decoration: none;  //usowamy wszystkie podkreslenia przyciskow
+  @include inline-block;  // wyswietlamy go jako element blokowo linjowy
+  font-size: $basic-font-size;  
   font-weight: 400;
   line-height: $basic-line-height;
   text-transform: uppercase;    // wszystkie przyciski bedą w duzych literach
