@@ -39,6 +39,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
   gem 'coffee-rails', '~> 4.1.0'
   gem 'font-awesome-sass', '~> 4.6'   # gem do ikonek wyszukiwania itp. http://fontawesome.io/get-started/
 
+  gem 'jquery_context_menu-rails'
+
 
 
 group :development, :test do
