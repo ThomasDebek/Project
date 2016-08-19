@@ -20,8 +20,8 @@
 
   <!--
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
-   dzieki temu mamy mozliwosc dodania ikonki wyszukiwania ale my uzylismy gemu font-awesome-sass -->
+   dzieki temu mamy mozliwosc dodania ikonki wyszukiwania
+   ale my uzylismy gemu font-awesome-sass -->
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -32,6 +32,22 @@
   Znacznik powyżej dla użądzen mobilnych
   chodzi o to - ze rozmair roboczego obszaru ma sie dostosowac do uządzenie i początkowa szerokość to 1
   -->
+
+
+  <!-- jQuery -->
+  <!--MENU MENU MENU  -->
+  <!-- Ten skrypt jest nam potrzebny do naszego mobilnego menu - dzieki niemu bedziemy mieli
+   mozliwosc zastostowania rozwiajanego menu -->
+  <!-- <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>  -->   <!-- Bardzo wazne najpierw podpinamy wlasciwą biloteke a dopiero puzniej dodatki --|>
+
+  <!-- mobilne menu --> <!-- Wchodzimy na strne http://slicknav.com/ pobieramy  i kopiujemy dwa pliki  jquery.slicknav.js i slicknav.scss core.scss theme.scss i wklejamy odpowiednio -->
+
+
+  <script src="http://code.jquery.com/jquery-1.9.0rc1.js"></script>
+  <link rel="stylesheet" href="../../assets/javascripts/jquery.slicknav.min.js">
+  
+  <link rel="stylesheet" href="../../assets/stylesheets/style_new/slicknav.scss">
+
 
 </head>
 <body>
