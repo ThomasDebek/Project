@@ -44,3 +44,27 @@ Please feel free to use a different markup language if you do not plan to run
 
  Tworzymy nowy plik o nazwie grid.scss i wklejmay do niego klika danych :) naturalnie z githuba
  I podpinamy go w naszej apce czyli application.css.scss
+
+
+
+ 10. Tworzymy MENU - RESPONSYWNE DLA wielu użądzen
+ - uzywamy: http://slicknav.com/ (pobieramy z niego pliki) i wklejmay do
+   : stylesheets/slick
+   core.scss
+   slicknav.scss
+   theme.scss
+   oraz
+   : javascript
+   jquery.slicknav.min.js
+   : a w laytusie wklejamy siezke <script src="../../assets/javascripts/jquery.slicknav.min.js"></script>
+   : oraz piszemy skrypt
+
+   <script>
+     $(document).ready(function(){
+       /* menu mobilne */
+       $('#main-menu').slicknav({
+         prependTo: '#attach-mobile-menu',
+         label: ''                           /* label: ''  USOWAMY NAPIS MENU Z ETYKITY */
+       });
+     });
+   </script>

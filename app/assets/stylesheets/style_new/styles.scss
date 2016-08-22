@@ -12,124 +12,106 @@ $total-width: 100%; // Musi ona posiadac wartosc 100% wtedy automatycznie bedą 
 @import "helpers";
 @import "grid";
 
-.our-services .single-col    {
-  @include column(3);
-  media: $tablet {
-     @include column(12);
+.our-services .single-col {
+  @include column(12);
+  @media #{$tablet} {
+    @include column(3);
   }
 }
 
 .advantages .single-col {
-  @include column(4);
-  media: $tablet {
-    @include column(12)
+  @include column(12);
+  @media #{$tablet} {
+    @include column(4)
   }
 }
 
 .statistics .single-col {
-  @include column(3);
-  media: $phone {
-    @include column(12);
+  @include column(12);
+  @media #{$phone} {
+    @include column(6);
   }
 
 }
-
 
 .our-team .single-col {
-  @include column(4);
-  media: $tablet {
-    @include column(12);
+  @include column(12);
+  @media #{$tablet} {
+    @include column(4);
   }
 }
-
-
-
 
 .footer-main .single-col {
-  @include column(3);
-  media: $phone {
-    @include column(12);
+  @include column(12);
+  @media #{$phone} {
+    @include column(6);
   }
-  media: $tablet {
-    @include column(12);
+  @media #{$tablet} {
+    @include column(3);
   }
 }
-
-
 
 // Kontener
 .container {
-  max-width: 1200px;  //nasza maksymalna szerokosc
-  margin: 0 auto;     // nasz margines gora dol zero - boki -auto
-  clear: both;        // elementy plywajace
-  padding: 0 15px;     // odsetepy gora dol zero, a od lewej i prawej 15px
+  max-width: 1200px; //nasza maksymalna szerokosc
+  margin: 0 auto; // nasz margines gora dol zero - boki -auto
+  clear: both; // elementy plywajace
+  padding: 0 15px; // odsetepy gora dol zero, a od lewej i prawej 15px
 }
-
 
 // Inne elementy
 img {
   max-width: 100%;
-  vertical-align: middle;  //widok pod obrazkiem - skaluje sie od malego do duzego
+  vertical-align: middle; //widok pod obrazkiem - skaluje sie od malego do duzego
 }
 
 a {
-  text-decoration: none;   //usunmy domyslne podkreslenie tekstu wsrod odnosnikow
+  text-decoration: none; //usunmy domyslne podkreslenie tekstu wsrod odnosnikow
 }
-
-
-
-
-
 
 // Wykluczmy marginesy z elementów tak aby nam nie przeszkadzaly
 // *  - taki selektor który odwołuje sie do wszystkiego na stronie
 * {
-  box-sizing: border-box;   //efekt pudelka
+  box-sizing: border-box; //efekt pudelka
 }
-
 
 // TERAZ TYLY SEKCJI ktore czesto sie przewijają
 
 .section-title {
-  margin-bottom: 40px;   // margines na dole
+  margin-bottom: 40px; // margines na dole
   @include center-text;
 }
 
-
 // Naglowki
-h1, h2 , h3 {
-  line-height: 1.1;   //wysokosc linji dla nagółwków -czyli bardzo subtelna zmiana
+h1, h2, h3 {
+  line-height: 1.1; //wysokosc linji dla nagółwków -czyli bardzo subtelna zmiana
 }
-
-
 
 // mixin dla przyciskow
 @mixin basic-button($color, $background-color) {
   color: $color;
   background-color: $background-color;
-  text-decoration: none;  //usowamy wszystkie podkreslenia przyciskow
-  @include inline-block;  // wyswietlamy go jako element blokowo linjowy
-  font-size: $basic-font-size;  
+  text-decoration: none; //usowamy wszystkie podkreslenia przyciskow
+  @include inline-block; // wyswietlamy go jako element blokowo linjowy
+  font-size: $basic-font-size;
   font-weight: 400;
   line-height: $basic-line-height;
-  text-transform: uppercase;    // wszystkie przyciski bedą w duzych literach
+  text-transform: uppercase; // wszystkie przyciski bedą w duzych literach
 }
-
-
 
 /***  Naglowek ***/
 header {
   z-index: 1000;
-  position: fixed;   //chce uzskac efekt -tzw. menu przyklejony do górnej krawedzi
-  top: 0;            // musimy powiedziec gdzie ma byc przyczepiony czyli do górnej krawedzi
-  left: 0;           // lewej
-  right: 0;          // prawej
+  position: fixed; //chce uzskac efekt -tzw. menu przyklejony do górnej krawedzi
+  top: 0; // musimy powiedziec gdzie ma byc przyczepiony czyli do górnej krawedzi
+  left: 0; // lewej
+  right: 0; // prawej
   background: $basic-background;
-  border-bottom: 1px solid $basic-border-color;  //obramowanie tego menu
-  box-shadow: 0 0 1px $basic-border-color;      // dajmy tez cien, wartosci to przesuniecie w pionie oraza poziomie
-  .navbar {     // teraz inietersuje mnie ta klasa i ustawimy w niej
+  border-bottom: 1px solid $basic-border-color; //obramowanie tego menu
+  box-shadow: 0 0 1px $basic-border-color; // dajmy tez cien, wartosci to przesuniecie w pionie oraza poziomie
+  .navbar { // teraz inietersuje mnie ta klasa i ustawimy w niej
     height: 63px; // szerokosc
-    .nav-logo {    //  logo musi byc umieszczone po lewej i wysrodkowanie
+    .nav-logo { //  logo musi byc umieszczone po lewej i wysrodkowanie
       @include float-left;
       @include center-vertical;
       z-index: 2;
@@ -137,29 +119,53 @@ header {
   }
 }
 
+// Ukrywamy elementy MENU
+#main-menu {
+  @include invisible;
+  @media #{$tablet} {
+    @include block;
+  }
+}
 
-.main-menu-content {               // Odwoalmy sie do samej klasy
-  @include float-right;            // Przesuniemy wszystko w prawo naszym mixinem
-  @include center-vertical;        // Uzyjemy pomocnej klasy wysrodkowanie w pionie
+// menu mobilne
+.slicknav_menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  @media #{$phone} {
+    @include invisible;
+  }
+  i {
+   @include invisible;
+  }
   ul {
-    @include list-style-none;      // Wylączymy styl listy
+    @include section-border-bottom;
+    box-shadow: 0 0 1px $basic-border-color;
+  }
+}
+
+.main-menu-content { // Odwoalmy sie do samej klasy
+  @include float-right; // Przesuniemy wszystko w prawo naszym mixinem
+  @include center-vertical; // Uzyjemy pomocnej klasy wysrodkowanie w pionie
+  ul {
+    @include list-style-none; // Wylączymy styl listy
     li {
-      @include float-left;         // Umiescimy znaczniki obok siebie
-      @include block;              // Elementy muszą byc blokieim
+      @include float-left; // Umiescimy znaczniki obok siebie
+      @include block; // Elementy muszą byc blokieim
       a {
         color: $menu-link-color;
-        font-size: 15px;           // Tu uzyjemy sztywnej wartosci
-        font-family: $font-family-secondary;   // Tu nasze lato
-        font-weight: 400;          // Jest to bazowa waga tekstu
-        padding: 20px 14px;        // gora dol 20 i po bokach 14
+        font-size: 15px; // Tu uzyjemy sztywnej wartosci
+        font-family: $font-family-secondary; // Tu nasze lato
+        font-weight: 400; // Jest to bazowa waga tekstu
+        padding: 20px 14px; // gora dol 20 i po bokach 14
         line-height: 20px;
-        @include basic-transition;  // Przejscie delikatne-bardzo subtelne 2m/s
-        &:hover {                   // Zagniezdzimy wyglad stanu hover
+        @include basic-transition; // Przejscie delikatne-bardzo subtelne 2m/s
+        &:hover { // Zagniezdzimy wyglad stanu hover
           color: $accent-color;
         }
-        media: $tablet {
-        padding: 20px 22px;
-      }
+        @media #{$tablet} {
+          padding: 20px 22px;
+        }
       }
       i {
         font-size: 14px;

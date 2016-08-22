@@ -47,7 +47,7 @@ $desktop: "only screen and (min-width: 1200px)";
 }
 
 // Widocznosc
-.invisible {
+@mixin invisible {
   display: none;
 }
 
