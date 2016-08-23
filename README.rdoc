@@ -57,7 +57,7 @@ Please feel free to use a different markup language if you do not plan to run
    : javascript
    jquery.slicknav.min.js
    : a w laytusie wklejamy siezke <script src="../../assets/javascripts/jquery.slicknav.min.js"></script>
-   : oraz piszemy skrypt
+   : oraz piszemy skrypt dla naszego menu
 
    <script>
      $(document).ready(function(){
@@ -68,4 +68,34 @@ Please feel free to use a different markup language if you do not plan to run
        });
      });
    </script>
+
+
+   Dodajemy takze style: w styles.scss
+   // Ukrywamy elementy MENU
+   #main-menu {
+     @include invisible;
+     @media #{$tablet} {
+       @include block;
+     }
+   }
+
+   // menu mobilne
+   .slicknav_menu {
+     position: fixed;
+     left: 0;
+     right: 0;
+     @media #{$phone} {
+       @include invisible;
+     }
+     i {
+      @include invisible;
+     }
+     ul {
+       @include section-border-bottom;
+       box-shadow: 0 0 1px $basic-border-color;
+     }
+   }
+
+
+
  No newline at end of file
