@@ -133,14 +133,14 @@ header {
   left: 0;
   right: 0;
   @media #{$phone} {
-    @include invisible;
+    @include invisible;   // Ukrywamy wszystkie elementy i
   }
   i {
    @include invisible;
   }
   ul {
     @include section-border-bottom;
-    box-shadow: 0 0 1px $basic-border-color;
+    box-shadow: 0 0 1px $basic-border-color;    // Doamy cien i nasz kolor szary z domieszki
   }
 }
 
