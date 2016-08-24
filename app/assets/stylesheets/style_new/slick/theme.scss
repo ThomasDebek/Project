@@ -1,3 +1,8 @@
+@import "../colors";
+@import "../helpers";
+@import "../typography";
+
+
 //colors
 $color_0: rgba(255, 255, 255, 0.75);
 $color_btn: #222;
@@ -10,8 +15,8 @@ $color_hover_text: #222;
 .slicknav_menu {
 	font-size: 16px;
 	box-sizing: border-box;
-	background: $color_bg;
-	padding: 5px;
+	background: $basic-background; //$color_bg;   // Uzyjemy tutaj naszego KOLORU TLA PRZYCISKU
+	// padding: 5px;     // Usowamy ta wlasciwosc
 	* {
 		box-sizing: border-box;
 	}
@@ -21,17 +26,25 @@ $color_hover_text: #222;
 		text-shadow: 0 1px 3px $color_shadow;
 	}
 	.slicknav_icon-bar {
-		background-color: $color_text;
+		background-color: $basic-text-color;    // Zmienimy takze kolor tla naszego przycisku
 	}
 }
-.slicknav_btn {
-	margin: 5px 5px 6px;
+.slicknav_btn {                        // To nasza glowna klasa przycisku-batona mene
+	margin: 8px 15px 8px;              // musimy wyedytowac margines
+    padding:9px 10px;                  // Dodamy padding
 	text-decoration: none;
 	text-shadow: 0 1px 1px $color_0;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-	background-color: $color_btn;
+  border:1px solid $basic-border-color;     // DODAJMY OBRAMOWANIE NASZEGO PRZYCISKU uzyjemy standardowo zmiennej
+	background-color: $basic-background;    // Zmienimy takze kolor naszego menu
+  &:hover {                                 //Dodajmy takze stan hover
+    background-color: $basic-border-color;  // dodamy nasz kolor szary - jako bazowy stan koloru
+  }
+  &:focus {
+    background-color: $basic-border-color;  // oraz takze stan
+  }
 }
 .slicknav_nav {
 	color: $color_text;
@@ -40,10 +53,10 @@ $color_hover_text: #222;
 	font-size: 0.875em;
 	list-style: none;
 	overflow: hidden;
-	ul {
+	ul {                        // Zajmijmy sie takze odnosnikiem listy
 		list-style: none;
 		overflow: hidden;
-		padding: 0;
+		padding: 15px;          // Tu bede potrzebowal malego paddingu
 		margin: 0 0 0 20px;
 	}
 	.slicknav_row {
@@ -57,17 +70,21 @@ $color_hover_text: #222;
 			color: $color_text;
 		}
 	}
-	a {
-		padding: 5px 10px;
-		margin: 2px 5px;
+	a {                            // Zmienmy takze nasze elementy a czyli odnosniki
+		// padding: 5px 10px;      // Usowamy ten padding z trzech stron
+        padding-bottom: 5px;       // Pozostawimy tylko padding w czesci dolnej
+		// margin: 2px 5px;        // Marginesy usowamy
+      font-size: $basic-font-size; // Wprowadzmy wielkosc tekstu
 		text-decoration: none;
-		color: $color_text;
-		&:hover {
-			-webkit-border-radius: 6px;
-			-moz-border-radius: 6px;
-			border-radius: 6px;
-			background: $color_hover_bg;
-			color: $color_hover_text;
+		color: $basic-text-color;  // Ustawmy kolor tekstu
+		&:hover {                         // Musimy dodac pewne wlsciwosci
+          @include basic-transition;      // Oraz dodamy nasze przejscie czasowe - skorzystmy z naszego helpera i domieszki
+			                              // Wyedytujemy takze wyglad stanu hover - usowamy wiekszosc elementow
+          //-webkit-border-radius: 6px;
+		  //	-moz-border-radius: 6px;
+		  //	border-radius: 6px;
+		  //background: $color_hover_bg;
+			color: $accent-color;          // Zmienimy tylko kolor tla
 		}
 	}
 	.slicknav_txtnode {

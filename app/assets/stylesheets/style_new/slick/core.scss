@@ -7,11 +7,11 @@
 	display: block;
 	vertical-align: middle;
 	float: right;
-	padding: 0.438em 0.625em 0.438em 0.625em;
+    padding: 0.438em 0.625em 0.438em 0.625em;
 	line-height: 1.125em;
 	cursor: pointer;
 	.slicknav_icon-bar + .slicknav_icon-bar {
-		margin-top: 0.188em;
+		margin-top: 0.25em;                      // Wprowadzmy sobie troszke wiekszy margines naszego przycisku z wieksza wartoscią
 	}
 }
 .slicknav_menu {
