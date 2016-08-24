@@ -30,8 +30,7 @@ Please feel free to use a different markup language if you do not plan to run
 
 
 
-9. Gem Semantic
- Media_queries
+9. Gem Semantic - Media_queries
  Chodzi nam aby nasz projekt nad którym pracujemy byl wpelni responsywny
  Tak ze wielu miejscach mojej strony mamy kolumny a chcemy zeby byly zwijane do jednej
  I do tego uzyjemy bibloteki media

@@ -1,3 +1,7 @@
+
+@import "../helpers";    // Zeby nasze domieszki dzialaly musimy je podlączyć
+
+
 .slicknav_btn {
 	position: relative;
 	display: block;
@@ -21,7 +25,7 @@
 		float: left;
         width: 1.125em;
         height: 0.875em;
-		margin: 0.188em 0 0 0.438em;
+        margin: 0.188em 0 0 0.438em;
         &:before { // Firefox Mobile v42 bugfix
             background: transparent;
             width: 1.125em;
@@ -36,14 +40,15 @@
 	}
 	.slicknav_icon-bar {
 		display: block;
-		width: 1.125em;
-		height: 0.125em;
-		-webkit-border-radius: 1px;
+		// width: 1.125em;
+		// height: 0.125em;
+      @include size(22px,2px);                              // Najpierw zmienmy wysokosc i szerokosc uzyjmy naszej domieszki mixin size
+      -webkit-border-radius: 1px;
 		-moz-border-radius: 1px;
 		border-radius: 1px;
-		-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-		-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-		box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+		// -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);     //Oraz wylączyc wszystkie niepotrzebne elementy
+		// -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);        // wszystkie cienie
+		// box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);             // Ten takze
 	}
 	&:before {
 		content: " ";
