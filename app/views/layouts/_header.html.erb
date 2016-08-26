@@ -38,7 +38,12 @@
   <script>
     $(document).ready(function(){
       /* glowny slider */
-      $('#main-slider').bxSlider();
+      $('#main-slider').bxSlider({
+        mode: 'fade',      /* Tutaj ustawiamy tryb pracy czyli fade - to takie przenikanie */
+        auto: true,        /* Chce aby te slajdy byly przewijane automatycznie */
+        controls: true,    /* Chce takze zeby wyswietlane byly kontrolki */
+        pager: false       /* Ukrywamy paginacje */
+      });
     });
   </script>
 

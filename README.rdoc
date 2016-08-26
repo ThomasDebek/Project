@@ -115,4 +115,18 @@ Please feel free to use a different markup language if you do not plan to run
 </script>
 
 
+- W kolejnym etapie naszego slidera zrobimy:
+* przenikanie sie slajdow
+* usuniemy paginacje - te kontroli ponizej slidera
+* dodamy automatyczne przewijanie slajdow i wykorzystamy te ze strony http://bxslider.com/options
+
+
+w naszym skrypcie dodamy kilka klas
+$('#main-slider').bxSlider({
+			mode: 'fade',
+			auto: true,
+			controls: true,
+			pager: false
+		});
+
  No newline at end of file
