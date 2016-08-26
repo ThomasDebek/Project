@@ -97,4 +97,22 @@ Please feel free to use a different markup language if you do not plan to run
 
 
 
+
+ 15.bxSlider_glowny_slider_na_stronie
+ Uzyjemy teraz jqery - a dokladniej bxslider.com
+- jest responsywny
+- mozna go skonfigurowac na wiele róznych mozliwosci
+- uzyjemy go w czesci górnej i czesci dolnej (uzyjemy go do przesówania w poziomie i pionie)
+- ale my uzyjemy GEMA https://rubygems.org/gems/bxslider-rails   GEM GEM GEM GEM bxslider-rails
+* Dodajmey gem z rubygems i postepujemy wdg.dokumentacji
+
+- nastepnie podpinamy nasza klase - w naszym przypadku id
+<script>
+	$(document).ready(function(){
+		/* glowny slider */
+		$('#main-slider').bxSlider();
+	});
+</script>
+
+
  No newline at end of file
