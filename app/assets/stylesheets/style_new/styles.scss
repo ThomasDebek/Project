@@ -173,3 +173,29 @@ header {
     }
   }
 }
+
+
+
+// glowny slider
+.bxslider {                                              // Odwolamy sie do glownej klasy
+  .main-slide-1 {                                        // Jestesmy w tej klasie
+    //background-image: url('../../images/slider_1.jpg');  //Zaladujemy ten obrazek
+    background-image: asset-url('slider_1.jpg');
+    background-size: cover;                              //
+    background-repeat: no-repeat;                        // Nie chce zeby tlo bylo powtarzane
+    background-position: 0 0;                            // Pozycje odstep 0 i zero
+    &:after {                         // Uzyjemy nakladki
+      @include dark-overlay;                  // Damy nasza domieszke z helpera naszego przycimnienia slidera zeby nie odwracal uwagi od reszty witryny
+    }
+  }
+  .main-slide-2 {
+    //background-image: url('../../images/slider_2.jpg');
+    background-image: asset-url('slider_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    &:after {
+      @include dark-overlay;
+    }
+  }
+}
