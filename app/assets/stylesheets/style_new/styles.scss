@@ -136,11 +136,11 @@ header {
     @include invisible;
   }
   i {
-   @include invisible;   // Ukrywamy wszystkie elementy i
+    @include invisible; // Ukrywamy wszystkie elementy i
   }
   ul {
     @include section-border-bottom;
-    box-shadow: 0 0 1px $basic-border-color;    // Doamy cien i nasz kolor szary z domieszki
+    box-shadow: 0 0 1px $basic-border-color; // Doamy cien i nasz kolor szary z domieszki
   }
 }
 
@@ -174,18 +174,16 @@ header {
   }
 }
 
-
-
 // glowny slider
-.bxslider {                                              // Odwolamy sie do glownej klasy
-  .main-slide-1 {                                        // Jestesmy w tej klasie
+.bxslider { // Odwolamy sie do glownej klasy
+  .main-slide-1 { // Jestesmy w tej klasie
     //background-image: url('../../images/slider_1.jpg');  //Zaladujemy ten obrazek
     background-image: asset-url('slider_1.jpg');
-    background-size: cover;                              //
-    background-repeat: no-repeat;                        // Nie chce zeby tlo bylo powtarzane
-    background-position: 0 0;                            // Pozycje odstep 0 i zero
-    &:after {                         // Uzyjemy nakladki
-      @include dark-overlay;                  // Damy nasza domieszke z helpera naszego przycimnienia slidera zeby nie odwracal uwagi od reszty witryny
+    background-size: cover; //
+    background-repeat: no-repeat; // Nie chce zeby tlo bylo powtarzane
+    background-position: 0 0; // Pozycje odstep 0 i zero
+    &:after { // Uzyjemy nakladki
+      @include dark-overlay; // Damy nasza domieszke z helpera naszego przycimnienia slidera zeby nie odwracal uwagi od reszty witryny
     }
   }
   .main-slide-2 {
@@ -197,5 +195,49 @@ header {
     &:after {
       @include dark-overlay;
     }
+  }
+}
+
+// obrazki w sliderze
+.bx-viewport { // Widoczny obszar slidera
+  img { // Odwolamy sie do wszystkich img w naszym sliderze
+    @include invisible; // Teraz te obrazki bede chcial ukryc
+    @media #{$tablet} { // Ale bedą widoczne dopiero od takiej szerokosci
+      @include block; // Bedą wyswietlane jako element blokowy
+      position: absolute; // Pozycje absolutną
+      right: 10%; // od prawej krawedzi kontenera
+      top: 20%; // od gory
+    }
+  }
+}
+
+// zawartosc slajdu
+.main-slider-content {
+  padding: 15% 2%; // dzieki temu uzyzkam plyna strukturre
+  color: $brightest-text-color; // damy ze zmiennej
+  position: relative; // relatywna
+  z-index: 1; // rowny 1
+  h1 { // BEDZIE SIE SKALOWAL W ZALEZNOSCI OD UZADZENIA
+    font-size: 26px; // wysokoc
+    line-height: 33px; // szerokosc linji
+    font-weight: 400; // bazowa waga tekstu
+    @media #{$tablet} { // dla tabletu
+      font-size: 48px; // dla naglowka
+      line-height: 60px; // z wartoscia 60px
+    }
+  }
+  p {
+    font-size: 12px; // dla akapitu pod naglowkiem
+    line-height: $basic-line-height; // podobnie
+    @media #{$tablet} { // styl dla urzadzen
+      font-size: 18px; // tylko powiekszym rozmiar tekstu
+    }
+  }
+  a {
+    position: relative; // relatwynie oczysicie
+    @include basic-button($brightest-text-color, none); //bazowy styl przycisku
+    margin: 8px 0;  // marginesy dla mojego przycisku
+    padding: 12px 30px;  // gora dol 12, po bokach 30
+    border: 1px solid $brightest-text-color; // i tu wykorzystamy nasza zmienna
   }
 }
