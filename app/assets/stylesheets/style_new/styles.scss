@@ -236,8 +236,14 @@ header {
   a {
     position: relative; // relatwynie oczysicie
     @include basic-button($brightest-text-color, none); //bazowy styl przycisku
-    margin: 8px 0;  // marginesy dla mojego przycisku
-    padding: 12px 30px;  // gora dol 12, po bokach 30
+    margin: 8px 0; // marginesy dla mojego przycisku
+    padding: 12px 30px; // gora dol 12, po bokach 30
     border: 1px solid $brightest-text-color; // i tu wykorzystamy nasza zmienna
   }
 }
+
+// glowny kontener    STYL DLA ZAWARTOSCI STRONY ZEBY ZOSTALA PRAWIDLOWO ODSUNIETA
+#main-container {
+  padding-top: 53px;
+}
+
