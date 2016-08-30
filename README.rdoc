@@ -137,4 +137,8 @@ $('#main-slider').bxSlider({
  Korzystamy z: https://github.com/desandro/imagesloaded
  Lub z gemu: https://github.com/guyisra/imagesLoaded-rails
  * Ja oczywiscie z gemu
+ Bardzo wazna rzecz:
+ Musimy sie zdecydowac gdzie te obrazki bedziemy sprawdzac
+ - mozemy tylko w sliderze
+ - ale mozemy takze w calej stronie w glownym kontenerze <div id="main-controler">
 

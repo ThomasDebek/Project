@@ -10,6 +10,11 @@ gem 'mysql2', '>= 0.3.13', '< 0.5'
 gem 'semantic', '~> 1.4', '>= 1.4.1'
 
 
+# PLUGIN_Ladowanie_Obrazkow - Jest po to zeby zaladowal nasz slider dopiero po wczytaniu obrazkow
+# Dzieki temu nie bedzie bocznego marginesu na stronie
+gem 'imagesLoaded_rails'
+
+
 # gem 'therubyracer', platforms: :ruby
 
 

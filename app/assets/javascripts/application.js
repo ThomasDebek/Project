@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require bxslider
 //= require turbolinks
+//= require imagesloaded
 //= require_tree .
