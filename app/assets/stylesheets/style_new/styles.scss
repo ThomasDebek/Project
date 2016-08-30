@@ -256,25 +256,25 @@ header {
   .single-col {                       // Dodajmy teraz style do kazej pojedynczej kolumny
     margin-bottom: 30px;              // Chce zeby margines na dole bylo 30px
     @include center-text;             // I wysrodkowany tekst
-    span {
-      @include inline-block;
-      @include size(90px, 90px);
-      background: $alternate-background;
-      @include center-text;
-      @include border-radius-single(50%);
-      margin-bottom: 30px;
-      @include basic-transition;
-      &:hover {
-        background: $accent-color;
+    span {                                // Tutaj mamy nasze ikonki CZYLI NASZ EFEKT DEKORACYJNY - i teraz sie nimi zajmniemy
+      @include inline-block;              // CZYLI niech sie wyswietlaja blokowo wykorzystamy nasz helper
+      @include size(90px, 90px);          // szerokosc i wyskokos
+      background: $alternate-background;  // Uzyjemy zmiennej
+      @include center-text;               // zawartosc wysrodkowana
+      @include border-radius-single(50%); // TUTAJ CHCE UZYSKAC KOLA I podaje parametr 50 i dzieki temu moge uzyskac ten efekt
+      margin-bottom: 30px;                // magines na dole
+      @include basic-transition;          // PROSTY ANIMOWANY EFEKT HOVER i wykorzystamy nasz mixin
+      &:hover {                           // Tutaj bedzie sie zmienial kolor tla na naszym kole
+        background: $accent-color;        // Czyli nasz kolor akcentu
       }
-      &:hover > i {
-        color: $brightest-text-color;
-        cursor: default;
+      &:hover > i {                       // W momencie gdy najedziemy na nasz element zmienimy kolor
+        color: $brightest-text-color;     // Nasza zmienna
+        cursor: default;                  // I gdy najedziemy niech nam zmieni sie na kursor
       }
-      i {
-        color: $accent-color;
-        font-size: 30px;
-        line-height: 90px;
+      i {                                 // TERAZ IKONY
+        color: $accent-color;             // Bazowy kolor tekstu
+        font-size: 30px;                  // rozmiar tekstu
+        line-height: 90px;                // okreslona wysokosc lini
       }
 
     }
