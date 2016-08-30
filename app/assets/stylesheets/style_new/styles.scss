@@ -247,3 +247,39 @@ header {
   padding-top: 53px;
 }
 
+
+
+// Nasze uslugi
+.our-services {                       // Rozpoczniemy od tej klasy i nadamy jej wlasciowci
+  padding: 80px 0 60px;               // Margines gorny 80 boczne 0 i  dolny 60
+  @include overflow-fix;              // Tu nie ma zadnej wyskokosci i tu zastosujemy nasz mixin over-flov z wartoscia auto, naprawi nam to problem z wysokoscia wszedzie tam gdzie sa elementy plywajace
+  .single-col {                       // Dodajmy teraz style do kazej pojedynczej kolumny
+    margin-bottom: 30px;              // Chce zeby margines na dole bylo 30px
+    @include center-text;             // I wysrodkowany tekst
+    span {
+      @include inline-block;
+      @include size(90px, 90px);
+      background: $alternate-background;
+      @include center-text;
+      @include border-radius-single(50%);
+      margin-bottom: 30px;
+      @include basic-transition;
+      &:hover {
+        background: $accent-color;
+      }
+      &:hover > i {
+        color: $brightest-text-color;
+        cursor: default;
+      }
+      i {
+        color: $accent-color;
+        font-size: 30px;
+        line-height: 90px;
+      }
+
+    }
+    @media #{$tablet} { // Chce dla wiekszych urzadzen zlikwidowac calkowicie ten margines na dole wiec na poczatku bedzie 30 a potem wartosc 0
+    margin-bottom: 0;
+  }
+  }
+}

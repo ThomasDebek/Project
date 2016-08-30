@@ -142,3 +142,4 @@ $('#main-slider').bxSlider({
  - mozemy tylko w sliderze
  - ale mozemy takze w calej stronie w glownym kontenerze <div id="main-controler"> i my wlasnie tutaj to wykorzystamy
 
+ 18.Style_dla_sekcji_uslugi
