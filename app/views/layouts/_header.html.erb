@@ -34,15 +34,28 @@
     </ul>
   </div>
 
-
-  <script>
+  <!--
+  <script>                          /* Wylaczymy ten skrypt*/
     $(document).ready(function () {
       /* glowny slider */
       $('#main-slider').bxSlider({
-        mode: 'fade', /* Tutaj ustawiamy tryb pracy czyli fade - to takie przenikanie */
-        auto: true, /* Chce aby te slajdy byly przewijane automatycznie */
-        controls: true, /* Chce takze zeby wyswietlane byly kontrolki */
-        pager: false       /* Ukrywamy paginacje */
+        mode: 'fade', v v           /* Tutaj ustawiamy tryb pracy czyli fade - to takie przenikanie */
+        auto: true,                 /* Chce aby te slajdy byly przewijane automatycznie */
+        controls: true,             /* Chce takze zeby wyswietlane byly kontrolki */
+        pager: false                /* Ukrywamy paginacje */
+      });
+    });
+  </script>
+  -->
+
+  <script>
+    $('#main-container').imagesLoaded(function(){   /* I tutaj skorzystamy z naszego gemu do ladowania obrazkow przed reszta innych rzeczy - dzieki temu nie bedzie marginesu po prawej stronie widocznego np.w chromie */
+      /* glowny slider */
+      $('#main-slider').bxSlider({
+        mode: 'fade',
+        auto: true,
+        controls: true,
+        pager: false
       });
     });
   </script>

@@ -140,5 +140,5 @@ $('#main-slider').bxSlider({
  Bardzo wazna rzecz:
  Musimy sie zdecydowac gdzie te obrazki bedziemy sprawdzac
  - mozemy tylko w sliderze
- - ale mozemy takze w calej stronie w glownym kontenerze <div id="main-controler">
+ - ale mozemy takze w calej stronie w glownym kontenerze <div id="main-controler"> i my wlasnie tutaj to wykorzystamy
 
