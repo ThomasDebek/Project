@@ -129,4 +129,12 @@ $('#main-slider').bxSlider({
 			pager: false
 		});
 
- No newline at end of file
+
+ 17.Style_Slider_PLUGIN_Ladowanie_Obrazkow
+ Jest po to zeby zaladowal nasz slider dopiero po wczytaniu obrazkow
+ i wtedy na naszej stronie zniknie odstep miedzy strona od paskiem przewijania
+ - np. w chromie sie ujawnia
+ Korzystamy z: https://github.com/desandro/imagesloaded
+ Lub z gemu: https://github.com/guyisra/imagesLoaded-rails
+ * Ja oczywiscie z gemu
+
