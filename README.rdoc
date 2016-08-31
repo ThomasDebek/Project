@@ -130,7 +130,7 @@ $('#main-slider').bxSlider({
 		});
 
 
- 17.Style_Slider_PLUGIN_Ladowanie_Obrazkow
+17.Style_Slider_PLUGIN_Ladowanie_Obrazkow
  Jest po to zeby zaladowal nasz slider dopiero po wczytaniu obrazkow
  i wtedy na naszej stronie zniknie odstep miedzy strona od paskiem przewijania
  - np. w chromie sie ujawnia
@@ -143,3 +143,20 @@ $('#main-slider').bxSlider({
  - ale mozemy takze w calej stronie w glownym kontenerze <div id="main-controler"> i my wlasnie tutaj to wykorzystamy
 
  18.Style_dla_sekcji_uslugi
+ - tutaj dodalismy kilka styli dla naszych ladnych ikonek
+
+
+
+
+
+19.Sekcja_Portfolio_Owl_Carousel-slider_dla_portfolio
+ W tej sekcji zajmniemy sie animacja naszego portfolio, dodamy elementy ruchome
+ - dzieki czemu nasza storna bedzie wygladac duzo bardziej atrakcyjniej
+ - bedziemy mogi przeciągac nasze portfolio w lewo, prawo i bedzie w pleni responsywna
+ - czyli bedzie sie dostosowywal do użadzenia odbiorcy
+ *
+ - Bedziemy korzystac z pluginu: http://owlgraphic.com/owlcarousel/
+ - Ale my standardowo skorzystamy z gema: gem 'owlcarousel-rails', '~> 1.1', '>= 1.1.3.3'
+
+
+
