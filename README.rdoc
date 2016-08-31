@@ -142,6 +142,14 @@ $('#main-slider').bxSlider({
  - mozemy tylko w sliderze
  - ale mozemy takze w calej stronie w glownym kontenerze <div id="main-controler"> i my wlasnie tutaj to wykorzystamy
 
+ -USOWAMY OBRAMOWANIE DLA NASZEGO SLIDERA NADPISUJEMY KLASE Z GEMA
+ (Otoż: mając zainstalowanego gema nie widzimy wnetrza - ale mozemy sie do niego bardzo prosto
+ * dostac:
+ - wchodzimy w dokumentacje z githuba i z source kopiujemy i wklejamy odpowiednio w naszej apce i modyfikujemy to co chcemy
+ - w ten sposob odczytywany jest wczesniej nasz plik a puzniej z gema
+
+
+
  18.Style_dla_sekcji_uslugi
  - tutaj dodalismy kilka styli dla naszych ladnych ikonek
 
