@@ -15,4 +15,5 @@
 //= require bxslider
 //= require turbolinks
 //= require imagesloaded
+//= require owl.carousel
 //= require_tree .

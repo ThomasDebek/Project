@@ -25,8 +25,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 
 
-# Gemik do SLIDERA
+# Gemik do SLIDERA  - wykorzystalismy do w sekcji slidera
 gem 'bxslider-rails'
+
+
+# Gem - Plugin jquerowski do slajdow - wykorzystamy go w min. w sekcji Portfolio
+gem 'owlcarousel-rails'
 
 
 
