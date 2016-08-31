@@ -29,17 +29,19 @@
 ul.bxslider {
   list-style: none;
 }
-.bx-viewport {
+.bx-viewport {                                             // OBRAMOWANIA NIEPOTRZEBNY CIEN W NASZYM SLIDERZE
   /*fix other elements on the page moving (on Chrome)*/
   -webkit-transform: translatez(0);
 }
 /** THEME
 ===================================*/
-.bx-wrapper {
+.bx-wrapper {                             // WYLACZYMY NIEPOTRZEBNE RZECZY
+  /*
   -moz-box-shadow: 0 0 5px #ccc;
   -webkit-box-shadow: 0 0 5px #ccc;
   box-shadow: 0 0 5px #ccc;
   border: 5px solid #fff;
+  */
   background: #fff;
 }
 .bx-wrapper .bx-pager,
