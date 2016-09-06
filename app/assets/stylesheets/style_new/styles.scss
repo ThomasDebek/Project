@@ -299,6 +299,18 @@ header {
     width: 100%;        // Damy jej szerokosc 100%  Bardzow WAZNE USTAWIENIE
     cursor: move;       // Kursor charakterystyczny dla elementow ktore mozna przesowac
   }
+  &:hover .portfolio-hover {             // Wprowadzmy ampersend  22.Sekcja_Portfolio_Owl_Carousel_EFEKT_HOVER
+    opacity: 1;                          // Tu zmienimy nasze krycie z wartosci opacity:0 na pelne czyli 1
+  }
+  &:hover h3 {                           //  Wplynmy teraz na naglowek h3
+    @include translate3d(0%, 0%, 0%);    //  Przesuniecie nasze zresetujemy w osi Y
+  }
+  &:hover p {
+   @include translate3d(0%, 0%, 0%);     // Animacja dla pozostalych elementow
+  }
+  &:hover a {
+   @include translate3d(0%, 0%, 0%);
+  }
 
 }
 

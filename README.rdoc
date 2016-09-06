@@ -181,3 +181,8 @@ $('#main-slider').bxSlider({
  * Tu zagniżdzimy nasze style
  * Zajmniemy sie takze detalami w srodku
  * Jeszcze nie bedzie widac efektu pracy - ale wkrotce je ukaze
+
+
+22.Sekcja_Portfolio_Owl_Carousel_EFEKT_HOVER
+ * Teraz ukazmy nasze efekty z portfolio z powyzej
+ * Hover wywolujemy na klasie poftfolio-item ale bedzie on wyplywal takze na srodek
