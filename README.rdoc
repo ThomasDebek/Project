@@ -130,7 +130,7 @@ $('#main-slider').bxSlider({
 		});
 
 
- 17.Style_Slider_PLUGIN_Ladowanie_Obrazkow
+17.Style_Slider_PLUGIN_Ladowanie_Obrazkow
  Jest po to zeby zaladowal nasz slider dopiero po wczytaniu obrazkow
  i wtedy na naszej stronie zniknie odstep miedzy strona od paskiem przewijania
  - np. w chromie sie ujawnia
@@ -142,4 +142,36 @@ $('#main-slider').bxSlider({
  - mozemy tylko w sliderze
  - ale mozemy takze w calej stronie w glownym kontenerze <div id="main-controler"> i my wlasnie tutaj to wykorzystamy
 
+ -USOWAMY OBRAMOWANIE DLA NASZEGO SLIDERA NADPISUJEMY KLASE Z GEMA
+ (Otoż: mając zainstalowanego gema nie widzimy wnetrza - ale mozemy sie do niego bardzo prosto
+ * dostac:
+ - wchodzimy w dokumentacje z githuba i z source kopiujemy i wklejamy odpowiednio w naszej apce i modyfikujemy to co chcemy
+ - w ten sposob odczytywany jest wczesniej nasz plik a puzniej z gema
+
+
+
  18.Style_dla_sekcji_uslugi
+ - tutaj dodalismy kilka styli dla naszych ladnych ikonek
+
+
+
+
+
+19.Sekcja_Portfolio_Owl_Carousel-slider_dla_portfolio
+ W tej sekcji zajmniemy sie animacja naszego portfolio, dodamy elementy ruchome
+ - dzieki czemu nasza storna bedzie wygladac duzo bardziej atrakcyjniej
+ - bedziemy mogi przeciągac nasze portfolio w lewo, prawo i bedzie w pleni responsywna
+ - czyli bedzie sie dostosowywal do użadzenia odbiorcy
+ *
+ - Bedziemy korzystac z pluginu: http://owlgraphic.com/owlcarousel/
+ - Ale my standardowo skorzystamy z gema: gem 'owlcarousel-rails', '~> 1.1', '>= 1.1.3.3'
+ - Tutaj wiecej dokumentacji: https://github.com/acrogenesis/owlcarousel-rails
+
+ Po odpaleniu - pliki z naszymi obrazkami zniknely bo juz mamy odpowiendnie klasy
+ - musimy wywolac skrypt slidera
+ - i tutaj także wykorzystamy bibloteke imagesLoaded - ponieważ pod nią damy nasz plugi owlcarousel-rails
+
+
+ 
+
+

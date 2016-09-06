@@ -12,7 +12,13 @@
  *
  *= require_tree .
  *= require_self
+<<<<<<< HEAD
  *= require style_new/bxslider.css.scss
+=======
+ *= require bxslider
+ *= require owl.carousel
+ *= require owl.theme
+>>>>>>> 19.Sekcja_Portfolio_Owl_Carousel-slider_dla_portfolio
  */
 
 // @import "partials/reset";
