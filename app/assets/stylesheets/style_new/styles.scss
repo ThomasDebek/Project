@@ -316,5 +316,39 @@ header {
   width: 100%;                         //szerokosc na 100
   top: 50%;                            //odsuniecie od gory 50%
   transform: translateY(-50%);         // Przesunimy obiety wdg. srodka
+  h3 {
+    @include header-mixin(18px, 6px, $basic-background);    // W pliku z typografia mamy taka domieszke
+    @include translate3d(0%, -400%, 0%);                    // W takim początkowym stanie musze przesunąć nasz naglowek h3 do gory - on ma zjerzadzac z gory na dol
+    @include variable-transition(0.6s);                     // Tutaj przejscie damy az 6dziesiątych sekundy
+  }
+  p {                                              // Drugi element - to nasz akapit
+    color: $basic-background;                      // kolor - bialy ze zmiennej
+    margin-bottom: 20px;                           // margines na dole
+    @include translate3d(0%, -400%, 0%);           // Przejscia z gory na dol - takie same jak nagrze
+    @include variable-transition(0.6s);            // Przejscie tj.wyzej
+
+  }
+  a {                                      // Zlozony element w srodku
+    @include inline-block;                 // Okreslmy element jako liniowo blokowy
+    @include size(40px, 40px);             // Rozpoczne od kwadratu i ktory zostanie zaokrąglony - domieszka
+    @include border-radius-single(50%);    // Sztuczka z obramowaniem - dokladnie polowa
+    border: 1px solid $basic-background;   // Obramowanie
+    @include center-text;                  // Wysrodkowanie
+    margin: 0 5px;                         // Margines
+    @include translate3d(0%, 400%, 0%);    // Tutaj przejscie bedzie odwrotnie
+    @include basic-transition;             // Przejscie stale dla naszego przycisku
+    i {                              // W elemncie a mam jeszcze element i
+      line-height: 40px;             // Chce to i okreslic wysrodkowac w pione
+      font-size: 14px;               // Wysokosc
+      color: $basic-background;      // Kolor
+      @include basic-transition;     // Bazowe przejscie
+    }
+  }
+  a.portfolio-link-left {
+    @include variable-transition(0.4s);  // Damy przejscie
+  }
+  a.portfolio-link-right {
+    @include variable-transition(0.6s);  // Drugi przycisk po stronie prawej i damy inny czas - roznicowanie dlugosci przejscia
+  }
 }
 

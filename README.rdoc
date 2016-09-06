@@ -175,4 +175,9 @@ $('#main-slider').bxSlider({
  
 20.Sekcja_Portfolio_Owl_Carousel_WSTEPNE_STYLE
  * Teraz Ostylujemy nasze portfolio
+ * Tu nam zniknely malutkie elementy ale to doprecyzujemy w kolejnym etapie
 
+21.Sekcja_Portfolio_Owl_Carousel_STYLE_DLA_DETALI
+ * Tu zagniżdzimy nasze style
+ * Zajmniemy sie takze detalami w srodku
+ * Jeszcze nie bedzie widac efektu pracy - ale wkrotce je ukaze
