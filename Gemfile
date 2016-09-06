@@ -30,6 +30,7 @@ gem 'bxslider-rails'
 
 
 # Gem - Plugin jquerowski do slajdow - wykorzystamy go w min. w sekcji Portfolio
+# 19.Sekcja_Portfolio_Owl_Carousel-slider_dla_portfolio
 gem 'owlcarousel-rails'
 
 

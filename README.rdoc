@@ -166,6 +166,12 @@ $('#main-slider').bxSlider({
  - Bedziemy korzystac z pluginu: http://owlgraphic.com/owlcarousel/
  - Ale my standardowo skorzystamy z gema: gem 'owlcarousel-rails', '~> 1.1', '>= 1.1.3.3'
  - Tutaj wiecej dokumentacji: https://github.com/acrogenesis/owlcarousel-rails
+
+ Po odpaleniu - pliki z naszymi obrazkami zniknely bo juz mamy odpowiendnie klasy
+ - musimy wywolac skrypt slidera
+ - i tutaj także wykorzystamy bibloteke imagesLoaded - ponieważ pod nią damy nasz plugi owlcarousel-rails
+
+
  
 
 
