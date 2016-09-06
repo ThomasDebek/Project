@@ -283,3 +283,38 @@ header {
   }
   }
 }
+
+// Portfolio
+.portfolio {                    // Zaczniemy od naszej klasy
+  padding: 55px 0;              // Dodamy odstepy u gory55 oraz na dole
+  @include section-border-top;  // Dodamy poziomą linije u góry za pomocą domieszki ktra dodaje obramowanie u góry i ktora przyjmuje parametry - czyli kolor ktory pobierany jest za pomocą zmiennej
+  .owl-controls {               // Slider ma kontrolki i w nim zagnieżdzimy
+    margin-top: 60px;           // Jedynie to co nam jest odstep kontrolek od slidera
+  }
+}
+
+.portfolio-item {       // Teraz nadamy wlasicwosic
+  width: 100%;          // Kazdy element ma byc rozciągniety na 100 procent dostepnej szerokosci
+  img {                 // Odwolamy sie do elementów w img naszego obrazka znajdujacych sie w srodku
+    width: 100%;        // Damy jej szerokosc 100%  Bardzow WAZNE USTAWIENIE
+    cursor: move;       // Kursor charakterystyczny dla elementow ktore mozna przesowac
+  }
+
+}
+
+.portfolio-hover {                              // Teraz ta klasa
+  @include absolute-one-hundred-size;           // Skorzystamy z naszej domieszki
+  @include center-text;                         // Wysordkujmy zawartosc
+  @include basic-transition;                    // Przejscie ktore ma 2dziesiate sekundy
+  overflow: hidden;                             // Deliktany efekt przenikania w tle
+  background-color: $box-portfolio-background;  // Delikatne odsloniciec zdjecia w tle
+  opacity: 0;                                   // Domyślne krycie na zero
+}
+
+.portfolio-hover-inner {               // Style dla naszych malych elemtow
+  position: absolute;                  // pozycionowanie
+  width: 100%;                         //szerokosc na 100
+  top: 50%;                            //odsuniecie od gory 50%
+  transform: translateY(-50%);         // Przesunimy obiety wdg. srodka
+}
+
