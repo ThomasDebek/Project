@@ -355,6 +355,12 @@ header {
       color: $basic-background;      // Kolor
       @include basic-transition;     // Bazowe przejscie
     }
+    &:hover {                               // Tutaj okreslimy PRZEJSCIE NA NASZYCH PRZYCISKACH - po najechaniu zmienia kolor na bilay
+      background-color: $basic-background;
+    }
+    &:hover i {                            // podobnie
+      color: $accent-color;
+    }
   }
   a.portfolio-link-left {
     @include variable-transition(0.4s);  // Damy przejscie
