@@ -12,7 +12,7 @@ $accent-color: #45B6AF;        // Zielono-niebieski
 $basic-border-color: #DDD;
 
 // Boxy portfolio
-$box-portfolio-background: fade($accent-color,85%);  // Tu pobiezemy nasz kolor akcentu i obnizymy ten kolor o 85%
+$box-portfolio-background: rgba($accent-color, 0.85);  // Tu pobiezemy nasz kolor akcentu i obnizymy ten kolor o 85%
 
 // Kolory tła
 $basic-background: #FFF;                // Podstawowe tlo

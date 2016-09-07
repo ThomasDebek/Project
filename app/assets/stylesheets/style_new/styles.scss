@@ -11,6 +11,7 @@ $total-width: 100%; // Musi ona posiadac wartosc 100% wtedy automatycznie bedą 
 @import "typography";
 @import "helpers";
 @import "grid";
+@import "colors";
 
 .our-services .single-col {
   @include column(12);
