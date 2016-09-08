@@ -186,3 +186,7 @@ $('#main-slider').bxSlider({
 22.Sekcja_Portfolio_Owl_Carousel_EFEKT_HOVER
  * Teraz ukazmy nasze efekty z portfolio z powyzej
  * Hover wywolujemy na klasie poftfolio-item ale bedzie on wyplywal takze na srodek
+
+ 23.Sekcja_Wideo
+ * W tej sekcji sprawimy ze obrazki bedą sie plynie dostosowywaly do ilosci wolnego miejsca - bedzie ladnie skalowany
+ * Uzyjemy do tego naszej domieszki-mixina z pliku pomocniczego

@@ -371,3 +371,10 @@ header {
   }
 }
 
+
+// Sekcja ponizej portfolio - "Co jeszcze mozemy i co potrafimy zrobic"
+.content-offer {                // Odwolajmy sie do naszej klasy
+  padding: 55px 0 0;            // margines goryny 55 i po bokach 0 i 0
+  @include section-border-top;  // Miksin ktory dodaje pojedyncze obramowanie na gorze
+  @include center-text;         // Wysrodkujmy nasz tekst
+}
