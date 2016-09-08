@@ -190,3 +190,11 @@ $('#main-slider').bxSlider({
  23.Sekcja_Wideo
  * W tej sekcji sprawimy ze obrazki bedą sie plynie dostosowywaly do ilosci wolnego miejsca - bedzie ladnie skalowany
  * Uzyjemy do tego naszej domieszki-mixina z pliku pomocniczego
+
+ * W dalszej cześci uzyjemy specjalnego pluginu ktory laduje filmy z youtube
+  - i pojawia sie problem - czyli ten film nie dziala dopuki strona nie jest umieszczona na jakims serwerze
+  - Film zaladuje na samym kącu:
+  * i dlatego ten film bedzie sie wyswietlal tylko na wiekszych uządzeniach a na malych - po prostu go ukryjemy
+  * W naszej sekcji mamy kontener w ktorym bedzie wyswietlany film. Tutaj go ostylowalismy
+
+

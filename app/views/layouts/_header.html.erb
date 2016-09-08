@@ -165,8 +165,10 @@
   <div class="content-offer">
     <div class="container">
       <div class="section-title">
-        <h2>Co jeszcze możemy i co potrafimy zrobić</h2>
-        <p>Vestibulum accumsan auctor diam id aliquam. Sed at eros vitae nulla dictum convallis sit amet vel nibh</p>
+        <div class="container" data-animate="bounceIn">   <!-- Przesunmy naszą strukture - wysrodkowujac ja  -->
+          <h2>Dlaczego warto skorzystać z naszych usług</h2>
+          <p>Vestibulum accumsan auctor diam id aliquam. Sed at eros vitae nulla dictum convallis sit amet vel nibh</p>
+        </div>
       </div>
 
       <img src="<%= asset_path('desktop.png') %>" alt="">
@@ -177,7 +179,7 @@
   <!-- Sekcja video -->
   <div class="section-video">
     <div class="container">
-      <div id="movie">
+      <div id="movie">  <!-- Do tego diva bedzie ladowany nasz film -->
       </div>
       <div class="video-line">
         <h2>Nasz najnowszy projekt</h2>

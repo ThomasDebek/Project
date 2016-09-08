@@ -378,3 +378,25 @@ header {
   @include section-border-top;  // Miksin ktory dodaje pojedyncze obramowanie na gorze
   @include center-text;         // Wysrodkujmy nasz tekst
 }
+
+
+
+// Sekcja wideo
+.section-video {         // Zaczniemy od elementu otaczajacego
+  @include invisible;    // Ukrywamy ten film dla uzadzen mobilnych - bedą sie wyswietlac od dosć duzej wielkosci
+  position: relative;    // Pozycja relatywna - pomimo tego ze element nie jest widoczny
+  .container {           // Pobawmy sie teraz naszym contenerem
+    padding: 175px 0;    // Margines gorny i dolny po 175 i boczne po 0
+    z-index: 2;          // Zawartos tego kontenera powinna znajdowac sie przed filmem
+  }
+  @media #{$desktop} {   // ed megia od monitora - od tego momentu bedzie widoczna
+  @include block;        // niech sie wyswietla blokowo
+ }
+}
+
+#movie {                     // tu odwolamy sie do naszego diva w ktorym bedzie wyswietlany film
+  @include size(100%, 100%); // rozmiar na 100
+    &:after {                    // Przed nasza ciemna nakladka
+     @include dark-overlay;     // dodajmy ciemną nakladke
+    }
+}
