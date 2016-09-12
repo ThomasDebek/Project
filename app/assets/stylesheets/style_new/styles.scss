@@ -477,6 +477,31 @@ header {
     }
     @media #{$tablet} {         //
     text-align: left;           // Wysrodkowanie do lewej
+    }
   }
+}
+
+// Statystyki
+.statistics {                                  // Ostylujmy to
+  background-color: $alternate-background;     // Zdefinjujmy kolor tla
+  @include overflow-fix;                       // element pomocniczy ktory sprawi ze nasze elementy nie beda wychodzily po za obrys naszego kontenera
+  padding: 80px 0 70px;                        // gorny 80, po bokach 0, dol 70
+  .single-col {
+    @include column(12);              // Dodajmy piekne wyswitalnie
+    @media #{$tablet} {
+      @include column(3);
+    }
+    @include center-text;                      // Wysrodkujmy
+    .statistics-content {                      // Teraz zawartosc
+      margin-bottom: 30px;                     // margines dolny
+      h3 {                                     // Odwolajmy sie do h3
+        font-size: 60px;                       // Wielkosc
+        color: $accent-color;                  // Kolor
+        margin: 0;                            // margines 0 z kazdej storny
+      }
+      p {
+        font-size: 14px;                      // akapity
+      }
+    }
   }
 }
