@@ -198,3 +198,7 @@ $('#main-slider').bxSlider({
   * W naszej sekcji mamy kontener w ktorym bedzie wyswietlany film. Tutaj go ostylowalismy
 
 
+
+24.Sekcja_Wideo_Naglowek_i_przycisk
+ * Przycisk i naglowek tego przycisku - style dla nich ( klasa video-line)
+

@@ -400,3 +400,22 @@ header {
      @include dark-overlay;     // dodajmy ciemną nakladke
     }
 }
+
+
+.video-line {
+ @include center-text;
+  h2 {
+    @include header-mixin(48px, 26px, $brightest-text-color);
+    position: relative;
+  }
+  a {
+    position: relative;
+    @include basic-button($brightest-text-color, $accent-color);
+    margin: 8px 0;
+    padding: 12px 30px;
+    @include basic-transition;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
