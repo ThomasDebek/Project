@@ -421,3 +421,27 @@ header {
 }
 
 
+
+// Pasek ponizej wideo
+.section-video-text {                // Klasa otaczajaa
+  background-color: $accent-color;   // kolor tla
+  padding: 50px 0;                   // Gora dol po 50 a po bokach 0
+ @include center-text;               // Zawartosc wysrodkujmy
+  h2 {                                   // Naglowek
+    color: $brightest-text-color;         // Kolor
+    margin-bottom: 0;                     // Margines na dole dokladnie 0
+    a {                                                            // nasz zagniezdzony przycisk
+     @include basic-button($brightest-text-color, $accent-color);  // bedzie przyjmowal dwa parametry
+      margin: 8px 0 8px 65px;                                      // marginesy gorny 8 prawa0 dol8 lewa65
+      padding: 10px 30px;                            // gora dol 10, boki 30
+      border: 2px solid $brightest-text-color;       // Obramowanie
+     @include border-radius-single(2px);             // Zaokrąglenie narożników
+     @include basic-transition;                      // Proste przejscie - czyli nasze standardowe 0,2sek
+      &:hover { // Bedzie bazowal na zamianie koloru
+        color: $accent-color; // Kolor tekstu na kolor tla i na odwrota
+        background-color: $brightest-text-color;
+      }
+    }
+  }
+}
+

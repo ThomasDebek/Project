@@ -201,4 +201,4 @@ $('#main-slider').bxSlider({
 
 24.Sekcja_Wideo_Naglowek_i_przycisk
  * Przycisk i naglowek tego przycisku - style dla nich ( klasa video-line)
-
+ * Skupimy sie takze na prostym pasku ponizej sekcji wideo
