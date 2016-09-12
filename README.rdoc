@@ -202,3 +202,10 @@ $('#main-slider').bxSlider({
 24.Sekcja_Wideo_Naglowek_i_przycisk
  * Przycisk i naglowek tego przycisku - style dla nich ( klasa video-line)
  * Skupimy sie takze na prostym pasku ponizej sekcji wideo
+
+
+25.Sekcja_Nasze_Zalety-uklad_dla_urządzen
+ * W tej skecji zajmniemy sie elementami glownie po lewej stronie
+ * Po lewej stronie bedzie ikona a po prawej tekst
+ * Dopasujemy je takze to wielu użądzen - bedzie tez nasz gird system
+ - dla mniejszych użadzen 1 kolumna a dla wiekszych 3

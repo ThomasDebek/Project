@@ -445,3 +445,21 @@ header {
   }
 }
 
+
+
+// Sekcja Nasze zalety
+.advantages {                    // Odwolajmy sie do naszej klasy
+  padding: 80px 0 20px;          //  gora 80 po bokach 0 i na dole 20
+  @include clearfix;             // Zawartosc calej kolumny jest elementem plywajacym i dzieki niemu nie ma problemu z ustawieniem
+  .single-col {                  // Odwolajmy sie do kolumn
+    @include center-text;        // wysrodkowanie
+    margin-bottom: 30px;         // odstepy pomiedzy kolumnami
+    span {                          // nasza ikona
+      @include block;               // wyswietlimy blokowo
+      @include center-no-float;     // Musi byc  NIE PLYWAJACY I NIE FLOAT
+    }
+    .services-content {          // wazna zecz
+      margin-left: 0;            // usowamy wszelkie marginesy po lewej stronie
+    }
+  }
+}
