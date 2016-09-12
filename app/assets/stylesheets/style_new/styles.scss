@@ -402,20 +402,22 @@ header {
 }
 
 
-.video-line {
- @include center-text;
-  h2 {
-    @include header-mixin(48px, 26px, $brightest-text-color);
-    position: relative;
+.video-line {              // Tu odwololamy sie do naszej klasy
+ @include center-text;     // Wysrodkujmy nasze elementy
+  h2 {                     // Tu nasz naglowek
+    @include header-mixin(48px, 26px, $brightest-text-color);  // Nasz mixin i jego 3 parametry - czyli rozmiar tekstu, margines i trzeci kolor
+    position: relative;   // bradzo wazne, musi byc pozycjonowany relatywnie
   }
-  a {
-    position: relative;
-    @include basic-button($brightest-text-color, $accent-color);
-    margin: 8px 0;
-    padding: 12px 30px;
-    @include basic-transition;
+  a {                     // Teraz ten element
+    position: relative;   // Tez relatywnie
+    @include basic-button($brightest-text-color, $accent-color); // Mixin ktory formatuje mi przyciski z paramterami:( 1 parametr to kolor, a drugi to akcent koloru)
+    margin: 8px 0;     // Dla przycisku marginesy 8 i 0
+    padding: 12px 30px;   // Oraz paddingi
+    @include basic-transition;   // przejscie czasowe
     &:hover {
-      opacity: 0.7;
+      opacity: 0.7;  // Zmiejszamy efekt hover
     }
   }
 }
+
+
