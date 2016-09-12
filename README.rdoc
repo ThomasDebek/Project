@@ -209,3 +209,5 @@ $('#main-slider').bxSlider({
  * Po lewej stronie bedzie ikona a po prawej tekst
  * Dopasujemy je takze to wielu użądzen - bedzie tez nasz gird system
  - dla mniejszych użadzen 1 kolumna a dla wiekszych 3
+ ** Zajmijmy sie elementem span i zmienmy wlasciwosci tej ikony
+ - zmodyfikujemy takze elementy i ich elementy i brakujace marginesy

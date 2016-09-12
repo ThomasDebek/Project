@@ -457,9 +457,26 @@ header {
     span {                          // nasza ikona
       @include block;               // wyswietlimy blokowo
       @include center-no-float;     // Musi byc  NIE PLYWAJACY I NIE FLOAT
+          margin-bottom: 20px;    // nasze margines
+          margin-top: 20px;       // gorny margines
+      i {                        // Ikona
+        font-size: 30px;         // wielkosc
+        color: $accent-color;    // kolor naszego akcentu
+      }
+      @media #{$tablet} {        // uklad dla uzadzen
+          @include inline-block;     // bedzie blokowy
+          @include no-center-float;  // Oznacza ze wylączone wysrodkowanie tekstu ale takze ze wlączony float do lewej
+            margin-bottom: 0;        // Margines
+      }
     }
     .services-content {          // wazna zecz
       margin-left: 0;            // usowamy wszelkie marginesy po lewej stronie
+      @media #{$tablet} {        // dla wiekszych uzadzen to nasz margines bedzie
+      margin-left: 80px;         // lewy 80px
+      }
     }
+    @media #{$tablet} {         //
+    text-align: left;           // Wysrodkowanie do lewej
+  }
   }
 }
