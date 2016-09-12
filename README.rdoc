@@ -211,3 +211,18 @@ $('#main-slider').bxSlider({
  - dla mniejszych użadzen 1 kolumna a dla wiekszych 3
  ** Zajmijmy sie elementem span i zmienmy wlasciwosci tej ikony
  - zmodyfikujemy takze elementy i ich elementy i brakujace marginesy
+
+
+26.Statystiki_skrypt_countTo
+ * Uzyjemy tutaj PLAGINU:
+ https://github.com/mhuggins/jquery-countTo
+   POBIERAMY jquery.countTo.js
+     - i wklejamy do naszych assetow
+     - i dajemy odnosnik w naszej stronie glownej
+    * To sekcja na temat projektu firmy itp.
+    * Te statystyki dzialaja w momencie kiedy strona jest wczytywana
+    - Czyli odliczanie
+    - Dodamy predkosc i style
+ * Jest bardzo fajny, robi to czego chcemy i jest prosty w uzyciu
+ * Wartosci odliczania maja sie znajdowac w naglowku h3
+

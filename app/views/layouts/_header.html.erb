@@ -2,7 +2,31 @@
 <div id="main-container">
 
   <!-- Nawigacja -->
-  <%= render 'layouts/navigation' %>
+  <header>
+    <nav>
+      <div class="container">
+        <div class="navbar">
+          <div class="nav-logo">
+            <a href=""><img src="<%= asset_path('logo.png') %>" alt="logo" width="50"></a>
+          </div>
+          <div class="main-menu-content">
+            <ul id="main-menu">
+              <li><a href="" class="menu-link-active">Start</a></li>
+              <li><a href="">Opinie</a></li>
+              <li><a href="">Portfolio</a></li>
+              <li><a href="">Sklep</a></li>
+              <li><a href="">Współpraca</a></li>
+              <li><a href="">Kontakt</a></li>
+              <li><a href=""><i class="fa fa-search"></i></a></li>
+            </ul>
+          </div>
+          <!-- menu mobilne -->
+          <div id="attach-mobile-menu">
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <!-- Slider -->
   <div class="top-slider">
@@ -271,25 +295,25 @@
     <div class="container">
       <div class="statistics-single-item single-col">
         <div class="statistics-content">
-          <h3></h3>
+          <h3><span class="timer" data-from="0" data-to="8000" data-speed="3000"></span></h3>  <!-- Musimy dodac nasze atrybuty ktory korzystaja z naszego plugniu CountTo czyli: timer(czas), data-from(od kiedy), dato-to(do kiedy), data-speed(predkosc) -->
           <p>Zadowolonych klientów</p>
         </div>
       </div>
       <div class="statistics-single-item single-col">
         <div class="statistics-content">
-          <h3></h3>
+          <h3><span class="timer" data-from="0" data-to="356" data-speed="3000"></span></h3>
           <p>Zrealizowanych projektów</p>
         </div>
       </div>
       <div class="statistics-single-item single-col">
         <div class="statistics-content">
-          <h3></h3>
+          <h3><span class="timer" data-from="0" data-to="6" data-speed="3000"></span></h3>
           <p>Lat działalności</p>
         </div>
       </div>
       <div class="statistics-single-item single-col">
         <div class="statistics-content">
-          <h3></h3>
+          <h3><span class="timer" data-from="0" data-to="128" data-speed="3000"></span></h3>
           <p>Innych ważnych rzeczy</p>
         </div>
       </div>
@@ -481,6 +505,15 @@
 
 
 <script>
+  $(document).ready(function(){
+    /* menu mobilne */
+    $('#main-menu').slicknav({
+      prependTo: '#attach-mobile-menu',
+      label: ''                           /* label: ''  USOWAMY NAPIS MENU Z ETYKITY */
+    });
+    /* odliczanie */
+    $('.timer').countTo();                // I tutaj dajmy nasze odliczanie  z naszeg pluginu - podpinam sie do klasy timer i wywoluje funkcji countTo
+  });
   $('#main-container').imagesLoaded(function () {   /* I tutaj skorzystamy z naszego gemu do ladowania obrazkow przed reszta innych rzeczy - dzieki temu nie bedzie marginesu po prawej stronie widocznego np.w chromie */
     /* glowny slider */
     $('#main-slider').bxSlider({
