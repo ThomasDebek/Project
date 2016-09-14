@@ -506,7 +506,7 @@ header {
   }
 }
 
-// Baner foto
+// Baner foto  - STYLE EFEKT PARALLAX
 .photo-banner {                                              // Zacznijmy od naszej klasy
   @include center-text;                                      // Wysrodkujmy
   //background: url('../images/foto_baner.jpg') fixed 0 0;
@@ -519,6 +519,24 @@ header {
     z-index: 0;                                              // musi byc podspodem
     &:after {                                                // Tu nasza nakladka
       @include dark-overlay;
+    }
+    .container {                        // Teraz nasz kontener
+      position: relative;               // Pozycja relatywana
+      z-index: 1;                       // Tu musi byc wiekszy od 1
+      padding: 175px 0;                 // I nasz padding gora dol 175 ,boki 0    Im wiekszy paddnig tym wiecej zdjecia bedzie odslonieta
+    }
+    h2 {
+      @include header-mixin(48px, 26px, $brightest-text-color);           // Ten naglowek okreslimy za pomoca naszej domieszki i
+    }
+    a {
+      position: relative;                                                // wnetrze
+      @include basic-button($brightest-text-color, $accent-color);       // prosty mixin i ma dwa parametry
+      margin: 8px 0;                                                     // marginesy
+      padding: 12px 30px;                                                // padingi
+      @include basic-transition;                                         // PROSTE PRZEJSCIE
+      &:hover {                                                          // Wlasciwosc polegajaca na zmniejszeniu krycia
+        opacity: 0.7;
+      }
     }
   }
 }
