@@ -241,5 +241,7 @@ $('#main-slider').bxSlider({
  ** WAZENE parametr Fixed - czyli to zostanie przyczepione do okreslonego punktu
 
  28.Nasz_Zespol_ogolne_style
-  * Nadamy style dla struktury
+  * Nadamy style dla struktury tj. jak ostepy tekstu, style w pionie
   * Standardowo dla wielu użadzen
+  * ustawimy marginesy
+  *

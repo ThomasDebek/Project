@@ -555,6 +555,23 @@ header {
 }
 .team-members {                   // Kontener ktory obejmuje wszystkie trzy profile
   @include overflow-fix;          // plywajcao
-  margin-bottom: 40px;            // odstep w tych trzech elementach na dole 
+  margin-bottom: 40px;            // odstep w tych trzech elementach na dole
 }
-
+.team-member {
+  @include center-text;
+  img {                               // pod kazdym obrazkiem
+    margin-bottom: 30px;              // marginesy dolene po 30
+    width: 100%;                      // szerokosc 100% -chodzi nam o plynna skalownosc  kiedy skalujemy nasze okno przegladarki i dla uządzen
+  }
+  h3 {
+    @include header-mixin(18p, 4px);   // W naglowku to nasz mixin rozmiar
+  }
+  span {                                // span - krotki rozmiar tekstu
+    line-height: 24px;                 // inna wysokosc linni
+    margin: 0 0 17px;                  // marginesy 0 fora , 0 po blokach, i dol 17
+    @include inline-block;             // element liniowo blokowy
+  }
+  p {
+    margin-bottom: 20px;               // opis naszego profilu - mardzin booto margines na dole 
+  }
+}
