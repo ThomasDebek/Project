@@ -239,3 +239,7 @@ $('#main-slider').bxSlider({
   : i dajemy odpoweidnie cssy-sassy
  * Wysokosc wyznaczona jest paddingiem
  ** WAZENE parametr Fixed - czyli to zostanie przyczepione do okreslonego punktu
+
+ 28.Nasz_Zespol_ogolne_style
+  * Nadamy style dla struktury
+  * Standardowo dla wielu użadzen

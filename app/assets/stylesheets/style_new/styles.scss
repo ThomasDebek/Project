@@ -540,3 +540,21 @@ header {
     }
   }
 }
+
+
+//28.Nasz_Zespol_ogolne_style
+// Nasz zespol
+.our-team {                             // Zaczniemy od klasy ktora calość obejmuje
+  padding: 55px 0 10px;                 // jak kazda klasa bedzie potrzebowala odstepow gora i dol 55 po bokoach 0 a na dole 10
+  @include center-text;                 // Zawartosc wysrodkowana
+  @include section-border-bottom;       // Obramowanie w sekcji dolnej
+  @include overflow-fix;                // nasze kolumny sa elementami plywajacymi i musimy wproawdzic overflow-fix
+  .single-col {                         //  klasa ktora w srodku reprezentuje pojedyncza kolumne
+    margin-bottom: 30px;                // i ustwimy odstepy dolne pomiedzy nimi po 30
+  }
+}
+.team-members {                   // Kontener ktory obejmuje wszystkie trzy profile
+  @include overflow-fix;          // plywajcao
+  margin-bottom: 40px;            // odstep w tych trzech elementach na dole 
+}
+
