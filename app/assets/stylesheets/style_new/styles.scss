@@ -505,3 +505,20 @@ header {
     }
   }
 }
+
+// Baner foto
+.photo-banner {                                              // Zacznijmy od naszej klasy
+  @include center-text;                                      // Wysrodkujmy
+  //background: url('../images/foto_baner.jpg') fixed 0 0;
+  background-image: asset-url('foto_baner.jpg');             // Zaladujmy zdjecie
+  background-attachment: fixed;                              // WAZENE WAZNE WAZNE Fixed - czyli tlo zostanie przyczepione do okresonego punktu - to cala sztuczka parallaxa
+
+ // background: url("../../images/foto_baner.jpg");
+  .photo-banner-inner {                                       // Wejdzmy w klase
+    position: relative;                                       // Standardowo relatywnie
+    z-index: 0;                                              // musi byc podspodem
+    &:after {                                                // Tu nasza nakladka
+      @include dark-overlay;
+    }
+  }
+}

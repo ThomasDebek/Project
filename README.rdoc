@@ -226,3 +226,16 @@ $('#main-slider').bxSlider({
  * Jest bardzo fajny, robi to czego chcemy i jest prosty w uzyciu
  * Wartosci odliczania maja sie znajdowac w naglowku h3
 
+27.PARALLAX_Baner_z_tym_efektem    --> Baner z efektem Parallax
+ * Czyli efet z przyczepionym tlem, obrazek przyczepiony jest z tylu
+ * Duże rozmiary naszego zdjecia 1920 x 1275   - Musimy wziąc to pod uwage
+ * Dzieki czemu bedzie go mozna swobodnie obcinac
+ * Parallax to bardzo protsta sztuczka w Css-ach, chodzi o odpowiednie zdefiniowanie wlasciwosci tla
+  - mam w tle zdjecie
+  - a wierzachnia strona tworzy tj. wierzchnia warste
+  - zdjecie jest nie ruchume
+  - jedynie co sie przesuowa to strona
+  : Podpinamy nasze zdjecie
+  : i dajemy odpoweidnie cssy-sassy
+ * Wysokosc wyznaczona jest paddingiem
+ ** WAZENE parametr Fixed - czyli to zostanie przyczepione do okreslonego punktu
