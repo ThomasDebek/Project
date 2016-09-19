@@ -246,3 +246,13 @@ $('#main-slider').bxSlider({
   * ustawimy marginesy
   * zajmniemy sie także elementami ikonek , sformatujemy je i ustawmi
   * dodamy ikonkom efekt hover
+
+
+  29.Slider_z_opiniami
+  * Ta sekcja bedzie oparta na sliderze bxslider - ale skonfigurujemy go calkeim inaczej
+  * Dodamy takze style
+  * Skonfigurujemy go
+  * Struktura bedzie banalnie prosta
+  * Wprowadzimy opcje niezbedne do takiej funkcjionalnosci
+  * Nasze slajdy bedą sie zmienialy autmatycznie
+   - zmodyfikujemy kilka funcji

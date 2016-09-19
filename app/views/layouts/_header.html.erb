@@ -513,6 +513,15 @@
     });
     /* odliczanie */
     $('.timer').countTo();                // I tutaj dajmy nasze odliczanie  z naszeg pluginu - podpinam sie do klasy timer i wywoluje funkcji countTo
+
+    /* Slider opinie */
+    $('#opinions-slider').bxSlider({      // I na naszym id wywolamy naszą funcjie
+      mode: 'vertical',                   // vertical oznacza ze sliajdy bedą przeskakiwaly pionowo
+      auto: true,                         // automatyczne zmiany slajdow
+      controls: false,                    // Wylanczam kontrolki - nie potrzeba nam ich
+      pager: false                        // bez mozliwosci zmiany recznej
+    });
+
   });
   $('#main-container').imagesLoaded(function () {   /* I tutaj skorzystamy z naszego gemu do ladowania obrazkow przed reszta innych rzeczy - dzieki temu nie bedzie marginesu po prawej stronie widocznego np.w chromie */
     /* glowny slider */
