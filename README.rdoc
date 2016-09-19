@@ -266,3 +266,8 @@ $('#main-slider').bxSlider({
 
 31.Stopka_kolumna_o_nas
  * Tutaj ostylujemy ikony serwisow spolecznosciowych (obramowanie i inne kolory)
+ * Ustawimy takze nasze paddingi itp
+
+32.Stopka_kolumna_nasz_blog
+  * To nasza lista najnowszych wpisow na blogu
+  * Wprowadzimy element dekoracyjny - czyli pozioma linje

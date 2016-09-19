@@ -675,3 +675,39 @@ footer {                                 //  odwolamy sie do tego elementu
   }
 }
 
+
+// stopka - nasz blog
+.our-blog {
+  ul {
+    @include list-style-none;                        // usowamy punktory
+    li {                                             // lista nasza
+      padding-top: 15px;                             // pading gorny 15
+      border-top: 1px solid $footer-social-borders;  // LINJA DEKORACYJNA POZIOMA - ALE CHCE JE WYSWIETLAC TYLKO POMIENDZY ELEMENTAMI
+      &:first-child {                                // Zastosujemy do pierwszego elementu
+        padding-top: 0;                              // Czyli style z  pierwszego elementu zostana usniete
+        border-top: none;
+      }
+    }
+    h4 {                                        // nasz odnoscnik
+      margin: 0;                                // marginesy 0 z kazdej strony
+      font-size: 13px;                          // rozmiar niewielki
+      a {
+        color: $bright-text-color;           // dla a jasnoszary
+        font-weight: 400;                    // wielkosc tekstu 400
+        @include basic-transition;           // standardowo przejscie
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.post-date {
+  line-height: $basic-line-height;        // wysokosc linji ze zmienna
+  margin: 0 0 10px;                       // marginesy
+  color: $footer-post-date;               // kolor
+  font-size: 12px;                        // wielkosc
+  @include inline-block;                  // element linjowo blokowy
+}
+
