@@ -631,6 +631,9 @@ header {
 footer {                                 //  odwolamy sie do tego elementu
   background-color: $footer-background;  // kolor naszej stopki
   color: $bright-text-color;             // jasny  kolor tekstu - nieco ciemniejszy od bazowego
+  ul {
+    @include list-style-none             // Usnunmy punktory w calej klasie dzieki czemu nie bedziemy powielac kodu
+  }
 }
 .footer-main {
   padding: 84px 0 65px;                // gora 84, boki 0, dol 65
@@ -649,7 +652,7 @@ footer {                                 //  odwolamy sie do tego elementu
 
 // stopka - o nas
 .footer-social {                     // wejdzmy w nasza klase
-  @include list-style-none;          // dodamy styl ktory usowa punktory
+  //@include list-style-none;          // dodamy styl ktory usowa punktory
   li {
     @include inline-block;           // wyswietlmy blokowo-linjiow
     margin-right: 9px;               // margines po stronie prawej 9
@@ -679,7 +682,7 @@ footer {                                 //  odwolamy sie do tego elementu
 // stopka - nasz blog
 .our-blog {
   ul {
-    @include list-style-none;                        // usowamy punktory
+    //@include list-style-none;                        // usowamy punktory
     li {                                             // lista nasza
       padding-top: 15px;                             // pading gorny 15
       border-top: 1px solid $footer-social-borders;  // LINJA DEKORACYJNA POZIOMA - ALE CHCE JE WYSWIETLAC TYLKO POMIENDZY ELEMENTAMI
@@ -715,7 +718,7 @@ footer {                                 //  odwolamy sie do tego elementu
   // Stopka - galeria
 .footer-gallery {                     // Odwolajmy sie do naszej klasy
   ul {
-   @include list-style-none;            // usowamy punktory
+   //@include list-style-none;            // usowamy punktory
     li {
       @include inline-block;            // wyswietlm liniowo blokowo
       margin-right: 2px;                // margines prawy
@@ -729,6 +732,29 @@ footer {                                 //  odwolamy sie do tego elementu
           opacity: 0.7;                 // tyle uzyjemy
         }
       }
+    }
+  }
+}
+
+
+
+// Stopka - linki
+.more-links {
+  li {
+    @include block;                                     // wysetlmy blokowo
+    padding-bottom: 15px;                               // odstep dolny
+    margin-bottom: 15px;                                // margines dolny
+    border-bottom: 1px solid $footer-social-borders;    // obramowanie w czesci dolnej
+    &:last-child {                                      // usnunmy podkreslnie z ostatniego elementu
+      border-bottom: none;                              // ostatnie element
+    }
+  }
+  a {                                                  // odnosniki dla elementow
+    color: $bright-text-color;                         // kolor
+    line-height: $basic-line-height;
+    @include basic-transition;                    // standardowa domieszka
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

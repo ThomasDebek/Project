@@ -278,3 +278,8 @@ $('#main-slider').bxSlider({
   * Ulozymy odpowiednio obrazki
   * Efekt hover
   * Przy użądzeniach srednio-mniejszych ma sie wyswietlac w jednej umownej linji i ladnie sie wyswietlala
+
+34.Stopka_kolumna_z_linkami
+  * usniemy punktory
+  * wprowadze mala modyfikacje dla calej stopki/footer
+  * style dla linkow
