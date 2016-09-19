@@ -271,3 +271,10 @@ $('#main-slider').bxSlider({
 32.Stopka_kolumna_nasz_blog
   * To nasza lista najnowszych wpisow na blogu
   * Wprowadzimy element dekoracyjny - czyli pozioma linje
+
+
+ 33.Stopka_kolumna_Galeria
+  * Usuniemy punktory
+  * Ulozymy odpowiednio obrazki
+  * Efekt hover
+  * Przy użądzeniach srednio-mniejszych ma sie wyswietlac w jednej umownej linji i ladnie sie wyswietlala

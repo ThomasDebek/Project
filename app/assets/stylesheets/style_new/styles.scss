@@ -711,3 +711,24 @@ footer {                                 //  odwolamy sie do tego elementu
   @include inline-block;                  // element linjowo blokowy
 }
 
+
+  // Stopka - galeria
+.footer-gallery {                     // Odwolajmy sie do naszej klasy
+  ul {
+   @include list-style-none;            // usowamy punktory
+    li {
+      @include inline-block;            // wyswietlm liniowo blokowo
+      margin-right: 2px;                // margines prawy
+      margin-bottom: 6px;               // dolny
+      img {
+        width: 80px;                    // rozmiar okreslimy szerokosc na sztywno
+      }
+      a {
+        @include basic-transition;      // nasz efekt hover
+        &:hover {                       // bedzie bazowal na zmianie ilosci krycia
+          opacity: 0.7;                 // tyle uzyjemy
+        }
+      }
+    }
+  }
+}
