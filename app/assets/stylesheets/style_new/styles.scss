@@ -645,3 +645,33 @@ footer {                                 //  odwolamy sie do tego elementu
   }
   }
 }
+
+
+// stopka - o nas
+.footer-social {                     // wejdzmy w nasza klase
+  @include list-style-none;          // dodamy styl ktory usowa punktory
+  li {
+    @include inline-block;           // wyswietlmy blokowo-linjiow
+    margin-right: 9px;               // margines po stronie prawej 9
+    margin-bottom: 3px;              // margines na dole 3
+    a {                                              //  teraz odnosniki
+      @include inline-block;                         //  takze liniowo blokowo
+      @include size(30px, 30px);                     // rozmiar
+      border: 1px solid $footer-social-borders;      // kazda ikona posiada obramowanie, 1px solid, i obramowanie naszej zmiennej (tylko w tym miejscu uzywamy)
+      @include border-radius-single(4px);            //  zaokrąglenie narożników
+      @include center-text;                          //  wysrodkujmy
+      text-decoration: none;                         // usunmy domyslne podkreslenie
+      @include basic-transition;                     // standardowo do wszystkich odnoscnikow dodajmyem
+      &:hover {                                      // zmiana koloru tla do takiego koloru jakie mamy obramowanie
+        background-color: $footer-social-borders;
+      }
+      i {
+        font-size: 14px;                        // wielkosc
+        color: $footer-social-icons;            // kolor
+        line-height: 28px;                      // wysokosc linji uzyjemy 28 poniewaz wysokosc calego elementu to 30
+      }
+
+    }
+  }
+}
+

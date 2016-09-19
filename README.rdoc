@@ -262,3 +262,7 @@ $('#main-slider').bxSlider({
 30.Stopka_style_podstawowe
   * damy kolory
   * i zajmniemy sie kolejnymi sekcjiami o nas, linkow, galeri z elementem hover, oraz lista linkow
+
+
+31.Stopka_kolumna_o_nas
+ * Tutaj ostylujemy ikony serwisow spolecznosciowych (obramowanie i inne kolory)
