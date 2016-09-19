@@ -256,3 +256,9 @@ $('#main-slider').bxSlider({
   * Wprowadzimy opcje niezbedne do takiej funkcjionalnosci
   * Nasze slajdy bedą sie zmienialy autmatycznie
    - zmodyfikujemy kilka funcji
+   - dodmay takze fix dla naprawy naszego viewporta aby naprawic ucinane litery
+
+
+30.Stopka_style_podstawowe
+  * damy kolory
+  * i zajmniemy sie kolejnymi sekcjiami o nas, linkow, galeri z elementem hover, oraz lista linkow

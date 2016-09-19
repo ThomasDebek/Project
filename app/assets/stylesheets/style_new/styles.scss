@@ -623,3 +623,25 @@ header {
 .bx-viewport {               // Musimy odwolac sie z klasy narzuconej przez bxslidera
   min-height: 130px;         // i okreslimy minimalna wysokosc
 }
+
+
+
+// Stopka
+// stopka - ogolne
+footer {                                 //  odwolamy sie do tego elementu
+  background-color: $footer-background;  // kolor naszej stopki
+  color: $bright-text-color;             // jasny  kolor tekstu - nieco ciemniejszy od bazowego
+}
+.footer-main {
+  padding: 84px 0 65px;                // gora 84, boki 0, dol 65
+  @include overflow-fix;               //  w stopce mamy elementy plywajace i zeby poprawic im ewentualne bledy czy problemy damy naszego fixa
+  h3 {
+    @include header-mixin(18px, 30px, $brightest-text-color);  // Jednolity styl dla wszystkich naglowkow , 18rozmiar, margines w czesci dolnej30, i kolor
+  }
+  .single-col {               // odwolamy sie do klasy pojedynczej kolumy
+    margin-bottom: 30px;      // bedzie nam potrzebny margines dolny
+    @media #{$tablet} {       // przy wiekszych uządzeniach ten margines zlikwidujemy
+    margin-bottom: 0;         // i likwidujemy go
+  }
+  }
+}
