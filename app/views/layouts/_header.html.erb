@@ -514,13 +514,7 @@
     /* odliczanie */
     $('.timer').countTo();                // I tutaj dajmy nasze odliczanie  z naszeg pluginu - podpinam sie do klasy timer i wywoluje funkcji countTo
 
-    /* Slider opinie */
-    $('#opinions-slider').bxSlider({      // I na naszym id wywolamy naszą funcjie
-      mode: 'vertical',                   // vertical oznacza ze sliajdy bedą przeskakiwaly pionowo
-      auto: true,                         // automatyczne zmiany slajdow
-      controls: false,                    // Wylanczam kontrolki - nie potrzeba nam ich
-      pager: false                        // bez mozliwosci zmiany recznej
-    });
+
 
   });
   $('#main-container').imagesLoaded(function () {   /* I tutaj skorzystamy z naszego gemu do ladowania obrazkow przed reszta innych rzeczy - dzieki temu nie bedzie marginesu po prawej stronie widocznego np.w chromie */
@@ -531,11 +525,24 @@
       controls: true,
       pager: false
     });
+
+    /* Slider opinie */                   // Musimy go jednak tutaj wywolac poniewaz ucinal nam tekst
+    $('#opinions-slider').bxSlider({      // I na naszym id wywolamy naszą funcjie
+      mode: 'vertical',                   // vertical oznacza ze sliajdy bedą przeskakiwaly pionowo
+      auto: true,                         // automatyczne zmiany slajdow
+      controls: false,                    // Wylanczam kontrolki - nie potrzeba nam ich
+      pager: false                        // bez mozliwosci zmiany recznej
+    });
+
     $('#portfolio-carousel').owlCarousel({       /* Najpierw wysolajmy nasze elementy tego slidera */
       autoPlay: 10000,                           // Automatyczne przewijanie slidow czyli 10sek
       items: 3,                                  // Przewijanie slidow - maxymalinie 3
       itemsDesktopSmall: [1199, 2],              //  Tu okreslimy sobie szerokosc dla takich srednich rozmiarow (1199-napierw szerokosc,a potem ponizej tej szerokosci bedą ladwoane tylko dwa zdjecia- zerknijmy na strone i tam mamy duzo wlasciwosci :http://owlgraphic.com/owlcarousel/#customizing
       itemsTablet: [768, 1]
     });
+
+
+
+
   });
 </script>

@@ -593,3 +593,33 @@ header {
    }
 }
 
+
+// Sekcja opinie
+.opinions {                   // nasza klasa
+  padding: 70px 0 30px;       // odstepy gora  70, boki 0 i dol 30
+  ul {                        // nasza lista
+    padding: 0;               // wyzerujmy je poniewaz przegladarki maja narzucone paddingi
+  }
+}
+
+.opinions-content {
+  @include center-text;       // Wysrodkujmy nasza klase
+  font-size: 18px;            // Domyslna wysokosc
+  padding-bottom: 40px;       // margines na dole
+  p {
+    line-height: 30px;       // wysokosc
+    font-style: italic;      // pochylona - mamy zaladowane w laoutsie 400 i 400i
+    color: $opinions-text;   // damy zmienna ktora jest uzyta tylko raz
+    margin-bottom: 25px;     // niewielki margines na dole
+  }
+  h3 {
+    @include center-text;    // wysrodkujmy tekst
+    margin: 0 0 18px;        // margines gora 0, boki 0, dol 18
+  }
+}
+
+
+// fix dla slidera           // Naprawiamy obciety tekst na dole
+.bx-viewport {               // Musimy odwolac sie z klasy narzuconej przez bxslidera
+  min-height: 130px;         // i okreslimy minimalna wysokosc
+}
