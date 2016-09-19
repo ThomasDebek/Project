@@ -283,3 +283,8 @@ $('#main-slider').bxSlider({
   * usniemy punktory
   * wprowadze mala modyfikacje dla calej stopki/footer
   * style dla linkow
+
+
+
+36.Sekcja_Copyright
+  * zdefinujemy kolor tla, odstepy itp
