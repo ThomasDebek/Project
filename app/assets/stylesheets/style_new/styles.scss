@@ -572,6 +572,24 @@ header {
     @include inline-block;             // element liniowo blokowy
   }
   p {
-    margin-bottom: 20px;               // opis naszego profilu - mardzin booto margines na dole 
+    margin-bottom: 20px;               // opis naszego profilu - mardzin booto margines na dole
   }
 }
+
+
+.memebers-social {
+  @include list-style-none;            // unikamy elementow listy
+   li {
+      @include inline-block;            // kazdy element jest jak blok ale linjowy
+      margin-right: 18px;               // margines po stronie prawej
+      i {
+        font-size: 18px;
+        color: darken($alternate-background, 20%);
+        @include basic-transition;
+        &:hover {
+        color: darken($alternate-background, 10%);
+       }
+      }
+   }
+}
+
