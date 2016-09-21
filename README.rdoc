@@ -288,3 +288,15 @@ $('#main-slider').bxSlider({
 
 36.Sekcja_Copyright
   * zdefinujemy kolor tla, odstepy itp
+
+
+37.Nadpisujemy_style_slidera
+ * Nadpiszemy nasze style w sliderze
+ - zajmniemy sie kontrolkami pod sliderem   (np. w sekcni nasze portfolio - na dole mam kontrolli)
+ - zmodyfikuje orginalne cssy slidera
+ (musimy zmienic to orginalnym css owl.theme.css
+ ** Zeby to zrobic musimy nadpisac naszego gema, dodajmey w orgilnalny plik z source gemu i wklejamy go w nasze
+     - assety (nadpisane),
+      - zmieniamy na scss, nadpisujemy,
+      - a w application.css.scss dodajemy nasze  *= require nadpisane_style_gemu/owl.theme.scss
+
