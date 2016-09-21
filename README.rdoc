@@ -300,3 +300,34 @@ $('#main-slider').bxSlider({
       - zmieniamy na scss, nadpisujemy,
       - a w application.css.scss dodajemy nasze  *= require nadpisane_style_gemu/owl.theme.scss
 
+38.Bibloteka_Animate_animacje_w_css
+  * Animujemy nasze elementy
+    - niektore elementy wsówane sa z dolu, inne z lewej
+    - i te elementy dodamy
+  * Bedziemy potrzebowali dwoch rzeczy
+     - pierwsza to bibloteka wykorzystujaca css do wywolania animacji
+     - druga to skrypt ktory wywola animiacje w odpowiednim momecie i czasie oraz tylko raz
+  ** Mozemy skorzystac z:
+     https://daneden.github.io/animate.css/
+     - to taka bibloteka (mozemy obejrzec sobie wszystkie dostepne animacjie)    - PIEKNE TO JEST
+     - przejdziemy do githuba (link z strony animate)   https://github.com/daneden/animate.css
+  ** Ale my skorzystamy z gema standardowo:
+    - https://rubygems.org/gems/animate-rails
+    - i postepujemy zgodnie z dokumentacja
+    - i nie zapomnijmy podpiac bibloteki *= require animate
+
+    - ale wdg. dokumentacji z animate.css
+       - musimy podpiac odpowiednio klasy w naszym layotsie
+
+       - Zajmniemy sie naszym logo i jego klasa class="nav-logo
+        *i tutaj podepniemy nasza pierwsza animiacjie z listy (animated infinite bounce)
+         --  <div class="nav-logo animated infinite bounce">
+
+
+
+
+
+
+
+
+

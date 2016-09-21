@@ -46,6 +46,12 @@ gem 'owlcarousel-rails'
 
 
 
+# Gem - Animujemy nasze elementy na stronie
+# 38.Bibloteka_Animate_animacje_w_css
+gem 'animate-rails', '~> 1.0', '>= 1.0.10'
+
+
+
 
   gem 'sass-rails', '~> 5.0'
 

@@ -114,7 +114,10 @@ header {
     height: 63px; // szerokosc
     .nav-logo { //  logo musi byc umieszczone po lewej i wysrodkowanie
       @include float-left;
-      @include center-vertical;
+      //@include center-vertical;
+      position: relative;
+      top: 10%;            // przesuniecie o 10 od gornej krawedzi
+      transform: translateY(-50%);   // ale zeby przesunąć obiekt wzgledem jego wlasnego srodka
       z-index: 2;
     }
   }
