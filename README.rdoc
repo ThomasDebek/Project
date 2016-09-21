@@ -326,6 +326,24 @@ $('#main-slider').bxSlider({
 
 
 
+39.Bibloteka_Animate_Skrypt_Viewport_checker
+    ** Problem z tymi Animacjami jest taki ze te animacje podpinane sa autmatycznie kiedy ta strona jest wczytywana
+      - chcemy zeby nasze elementy wywolywane byly tylko raz
+      - i tylko wtedy kiedy bedzie widoczna czesc strony i w niej ten element
+    * Dlatego skorzystamy z takiej wtyczki jak jQuery-viewport-checker
+       ** Robi dokladnie to czego potrzebujemy
+         -- Czyli sprawdza czy podany element o podanym id pojawil sie w viewporcie
+         - jesli tak to doda do niego kolejne klasy
+
+    * Potrzebna nam jest bibloteka z https://github.com/dirkgroenen/jQuery-viewport-checker/tree/master/src
+     - o nazwie jquery.viewportchecker.js
+     - i wklejamy ja w naszych assetach
+     - oraz dajemy sciezke w layotsie
+
+     Korzystanie z niego takze jest proste
+      - wybieramy element na stronie np. our-team
+       - dziala w ten sposob ze: w momencie kiedy pojawi sie w wievporcie z nasza klasa to dodamy kolejne elementy
+       - czyli takie klasy ktore beda generowaly animiacje
 
 
 

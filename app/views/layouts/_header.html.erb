@@ -513,6 +513,13 @@
     });
     /* odliczanie */
     $('.timer').countTo();                // I tutaj dajmy nasze odliczanie  z naszeg pluginu - podpinam sie do klasy timer i wywoluje funkcji countTo
+    /* viewport */
+    $('.our-team').viewportChecker({      // Zwracamy uwage na wielkosc liter   Tutaj bedziemy mieli nasza klase
+      classToAdd: 'animated slideInLeft'        // Tutaj dodamy nasza animiacjie (opcja ktora nas interesuje powinna dodawac klase  ( tutaj znajduje sie lista dostepnych opcji: https://github.com/dirkgroenen/jQuery-viewport-checker)
+    });                                   // Nas interesuje jedna czyli classToAdd: oraz element ktory wygeneruje nam animacje
+                                          // animated - to klasa dodana w naszym laytsie
+                                          // a swing - to dostepna animacja z strony : https://daneden.github.io/animate.css/
+                                          // CZYLI - TE DWIE KLASY ZOSTANA DODANE DO NASZEJ KLASY ALE DOPIERO WTEDY KIEDY ZOSTANIE ZALOADOWANY DO VIEWPORTU
 
 
 
