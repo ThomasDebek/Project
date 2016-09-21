@@ -346,6 +346,10 @@ $('#main-slider').bxSlider({
        - czyli takie klasy ktore beda generowaly animiacje
 
 
+40.Dodawanie_Animacji_do_Slidera
+  * W naszym  sliderze checmy zeby napis przesuwal sie z lewa w prawo inny z dolu w gore a obrazek jeszcze inaczej
+
+
 
 
 
