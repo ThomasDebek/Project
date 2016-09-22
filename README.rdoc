@@ -348,7 +348,25 @@ $('#main-slider').bxSlider({
 
 40.Dodawanie_Animacji_do_Slidera
   * W naszym  sliderze checmy zeby napis przesuwal sie z lewa w prawo inny z dolu w gore a obrazek jeszcze inaczej
+  * Wystarczy dodac klasy
+  * lub uzyc skryptu, ogarnąć klase i wywolac na niej jedna z metod i przypiac do niej obiekty kiedy pojawi sie w viewporcie
 
+
+
+41.Finalny_Skrypt_Animacji
+  * Skupie sie teraz na sekcji nasze uslugi
+    - jedna kolumna przesuwana bedzie od lewej ostatnia od prawej a srodkowe jeszcze inaczej
+    - dodam trzy animacjie
+    - Bardzo wazne: NIE MOGE DODAT TEGO NA SZTYWNO
+        - MUSZE DODAC TO ZA POMOCA ATRYBUTU  np:data-animate="fadeInleft" do naszych klas
+        * na samym początku te atrybuty powinny byc ukryte, a my mamy bardzo proste domieszki ukrywajace do tego (hide,show itp)
+          ** Czyli bede musial zebrac ze strony wszystkie nasze data-animate i dodac do nich domieszki ukrywajace hide czy show
+          * Zrobie to w skrypcie
+            - Za pomocą jQery odwolam sie do wszystkich elementow data-animate na stronie
+              i dodam do niej domieszke hide-ukryj-domieszka i przeliteruje petlą po nich
+            - czyli po tych elementach (this) i wywoalam nasza funkcjie viewportChecker
+            - dodam az trzy klasy show, animated oraz z naszych dodanych klas na stronie data= + nazwa funkcji   czyli data-animate="fadeInLeft"
+            - zapisujemy to tak classToAdd: 'show animated ' + $(this).data('animate')
 
 
 
