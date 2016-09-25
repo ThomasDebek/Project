@@ -122,7 +122,7 @@ ul.bxslider {
   width: 32px;
   height: 32px;
   text-indent: -9999px;
-  z-index: 9999;
+  z-index: 9999;                               // Tu mozemy wylaczyc nasze kontrolki - i zeby nam nie wchodzily na menu
 }
 .bx-wrapper .bx-controls-direction a.disabled {
   display: none;

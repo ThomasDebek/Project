@@ -371,3 +371,7 @@ $('#main-slider').bxSlider({
 
 
 
+ 42.Rozwiazanie_problemu_z_kontrolkami_slidera
+   * Tutaj zajme sie kontrolkami na naszym glownym sliderze
+     - problem polega na tym ze kontrolki wchodza nam na menu
+      - bedziemy musieli zmienic z-index  w bxslider w okolicy lini 128
