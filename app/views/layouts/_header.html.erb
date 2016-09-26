@@ -201,17 +201,25 @@
 
 
   <!-- Sekcja video -->
+  <!--
+  Film nie bedzie widoczny poniewaz mamy nieprawidlowe narzucone pozycjonowanie
+  poniewaz  element div id="movie"  ma zerowa wysokosc i nie widac naszego filmu
+  i dlatego musimy dodac klase  style="position:absolute"
+  -->
   <div class="section-video">
-    <div class="container">
-      <div id="movie">  <!-- Do tego diva bedzie ladowany nasz film -->
+      <div id="movie" style="position:absolute">  <!-- Do tego diva bedzie ladowany nasz film , dodamy na sztywno nasz styl-->
       </div>
       <div class="video-line">
-        <h2>Nasz najnowszy projekt</h2>
-        <a href="#" class="button">Zobacz więcej</a>
+        <div class="container" data-animate="bounceIn">
+          <h2>Nasz najnowszy projekt</h2>
+          <a href="#" class="button">Zobacz więcej</a>
+        </div>
       </div>
-      <div class="player">
+      <!-- Tutaj podepniemy nasz YTPlayer i na tym elemencie wywolamy skrypt, i tutja bedziemy musieli dodac specjalny atrybut -->
+      <div class="player"
+           data-property="{videoURL:'V6_85cSOIcE', containment:'#movie', showControls:false,startAt:0, mute:true,autoPlay:true, loop:true,opacity:1}" >
       </div>
-    </div>
+
   </div>
 
 
@@ -514,6 +522,10 @@
     /* odliczanie */
     $('.timer').countTo();                // I tutaj dajmy nasze odliczanie  z naszeg pluginu - podpinam sie do klasy timer i wywoluje funkcji countTo
     /* viewport */
+
+
+    /* YTPlayer */
+    $('.player').YTPlayer();      //  Musze sie odwolac do tego elementu do ktorego bedzie wywylywany nasz player
 
 
     // Tu mam pogladowy skrypt

@@ -393,4 +393,23 @@ $('#main-slider').bxSlider({
 
         i ten plik :  jquery.mb.YTPlayer.min.js
         wklejamy do naszego katalogu assetow javascript
-  * Nastepnie podepniemy do naszej strony:
+  * Nastepnie podpinamy do naszej strony:
+
+ ** Kolejnym krokiem bedzie dodanie specjalnych atrybutow do classy Player:
+    data-property="{videoURL:'V6_85cSOIcE',
+                               containment:'#movie',
+                               showControls:false,
+                               startAt:0,
+                               mute:true,
+                               autoPlay:true,
+                               loop:true,
+                               opacity:1}"
+     - ten atrybut ma nazwe date-property i przechowuje nazwe klucza z wartoscia z strony youtube
+     - videoURL: 'V6_85cSOIcE' - pierwsza z nich to koncowka adresu filmu identyfikator
+     - containment:'#movie'  - generalnie film wywolujemy w playrzea ale bedzie ograniczony i wywylany w klasie movie
+     - showControls: fase    - tutaj wartosc false, kontrolki tego odtwarzacza zostana wyłaczone ma byc odtwarzane tylko w tle
+     - startAT:0
+     - mute:true       - wylanczamy dzwiek
+     - autoPlay:true   - automatyczne odtwarzanie
+     - loop:true       - zaptelamy filmy
+     - inne rzeczy mozemy sobie zerknac na strone i mamy wiele innych dodatkow
