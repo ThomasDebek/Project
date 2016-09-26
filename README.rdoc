@@ -413,3 +413,8 @@ $('#main-slider').bxSlider({
      - autoPlay:true   - automatyczne odtwarzanie
      - loop:true       - zaptelamy filmy
      - inne rzeczy mozemy sobie zerknac na strone i mamy wiele innych dodatkow
+
+
+
+ 44.Finalny_projekt_kompilacja
+     * Tutaj dodamy jeszcze pare klas

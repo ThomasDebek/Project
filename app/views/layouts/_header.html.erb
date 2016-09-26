@@ -47,10 +47,10 @@
         <div class="main-slide-2">   <!-- Druga -->
           <div class="container">
             <div class="main-slider-content">
-              <h1>Oparty na LESS/SASS</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <a href="">Zobacz</a>
-              <img src="<%= asset_path('slider_2_tablet.png') %>">
+              <h1 class="animated fadeInDown" >Oparty na LESS/SASS</h1>
+              <p class="animated fadeInLeft" >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="" class="animated fadeInUp" >Zobacz</a>
+              <img class="animated fadeInDown" src="<%= asset_path('slider_2_tablet.png') %>">
             </div>
           </div>
         </div>
@@ -108,7 +108,7 @@
   <div class="portfolio">
     <!-- tytul -->
     <div class="section-title">
-      <div class="container">
+      <div class="container" data-animate="bounceIn" >
         <h2>Nasze portfolio</h2>
         <p>Vestibulum accumsan auctor diam id aliquam. Sed at eros vitae nulla dictum convallis sit amet vel nibh</p>
       </div>
@@ -116,7 +116,7 @@
 
     <!-- slider -->
     <div class="portfolio-slider">
-      <div class="container">
+      <div class="container" data-animate="fadeIn" >
         <div id="portfolio-carousel" class="owl-carousel">
           <div class="portfolio-item">
             <img src="<%= asset_path('owl_slider/os1.jpg') %>" alt="">
@@ -187,7 +187,7 @@
 
   <!-- Sekcja content  - czyli nasza zawartsc -->
   <div class="content-offer">
-    <div class="container">
+    <div class="container" data-animate="bounceIn" >
       <div class="section-title">
         <div class="container" data-animate="bounceIn">   <!-- Przesunmy naszą strukture - wysrodkowujac ja  -->
           <h2>Dlaczego warto skorzystać z naszych usług</h2>
@@ -236,7 +236,7 @@
   <!-- Sekcja Nasze zalety -->
   <div class="advantages">
     <div class="section-title">
-      <div class="container">
+      <div class="container" data-animate="bounceIn" >
         <h2>Dlaczego warto skorzystać z naszych usług</h2>
         <p>Vestibulum accumsan auctor diam id aliquam. Sed at eros vitae nulla dictum convallis sit amet vel nibh</p>
       </div>
@@ -245,7 +245,7 @@
     <div class="advantages-content">
       <div class="container">
         <!-- zalety - jeden element -->
-        <div class="single-col">
+        <div class="single-col" data-animate="fadeInLeft" >
           <span><i class="fa fa-male"></i></span>
           <div class="services-content">
             <h3>Doświadczony zespół</h3>
@@ -261,7 +261,7 @@
           </div>
         </div>
         <!-- zalety - jeden element -->
-        <div class="single-col">
+        <div class="single-col" data-animate="fadeInRight" >
           <span><i class="fa fa-line-chart"></i></span>
           <div class="services-content">
             <h3>5 lat na rynku</h3>
@@ -269,7 +269,7 @@
           </div>
         </div>
         <!-- zalety - jeden element -->
-        <div class="single-col">
+        <div class="single-col" data-animate="fadeInLeft" >
           <span><i class="fa fa-bookmark-o"></i></span>
           <div class="services-content">
             <h3>Najlepsze rozwiązania</h3>
@@ -277,7 +277,7 @@
           </div>
         </div>
         <!-- zalety - jeden element -->
-        <div class="single-col">
+        <div class="single-col" data-animate="fadeInUp" >
           <span><i class="fa fa-external-link"></i></span>
           <div class="services-content">
             <h3>Lepsze rozwiązania</h3>
@@ -285,7 +285,7 @@
           </div>
         </div>
         <!-- zalety - jeden element -->
-        <div class="single-col">
+        <div class="single-col" data-animate="fadeInRight" >
           <span><i class="fa fa-calculator"></i></span>
           <div class="services-content">
             <h3>Doświadczony zespół</h3>
@@ -332,7 +332,7 @@
   <!-- Sekcja paralax -->
   <div class="photo-banner">
     <div class="photo-banner-inner">
-      <div class="container">
+      <div class="container" data-animate="bounceIn" >
         <h2>Przykładowy baner parallax</h2>
         <a href="#" class="button">Zobacz</a>
       </div>
@@ -341,7 +341,7 @@
 
   <!-- Sekcja nasz zespol -->
   <div class="our-team">
-    <div class="container">
+    <div class="container" data-animate="bounceIn" >
       <div class="section-title">
         <h2>Dlaczego warto skorzystać z naszych usług</h2>
         <p>Vestibulum accumsan auctor diam id aliquam. Sed at eros vitae nulla dictum convallis sit amet vel nibh</p>
@@ -406,11 +406,11 @@
   <!-- Sekcja Opninie -->
   <div class="opinions">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title" data-animate="bounceIn">
         <h2>Dlaczego warto skorzystać z naszych usług</h2>
         <p>Vestibulum accumsan auctor diam id aliquam. Sed at eros vitae nulla dictum convallis sit amet vel nibh</p>
       </div>
-      <div class="opinions-content">
+      <div class="opinions-content" data-animate="fadeIn" >
         <ul class="bxslider" id="opinions-slider">
           <li>
             <p>Vestibulum ante ipsum primis in lum ante ipsum primis in faucibus orci orci lum ante luctus et ultrices
