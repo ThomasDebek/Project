@@ -375,3 +375,22 @@ $('#main-slider').bxSlider({
    * Tutaj zajme sie kontrolkami na naszym glownym sliderze
      - problem polega na tym ze kontrolki wchodza nam na menu
       - bedziemy musieli zmienic z-index  w bxslider w okolicy lini 128
+
+
+43.Plugin_Wideo_cz.1
+  * Nasz plugin nazywa sie  YTPlayer kotergo z reszta uzyjemy
+  * W tej czesci zajmniemy sie zlozoną rzecza
+   - pluginem ktory bedzie pobieral filmy z youtube i ladowal do naszej strony
+  * Wazne:
+   - ma dwa istotne ograniczenia :
+       - nie bedzie dzialal na urzadzeniach moblilnych
+       - bedzie dzialal tylko wtedy gdy bedzie uruchomiony przez serwer
+  ** Skorzystamy z:
+        https://github.com/pupunzi/jquery.mb.YTPlayer
+        pobieramy i rozpakowywyjemy:
+            jquery.mb.YTPlayer-master.zip
+        * Wchodzimy w katalogi jquery.mb.YTPlayer-master/inc/jquery.mb.YTPlayer.min.js
+
+        i ten plik :  jquery.mb.YTPlayer.min.js
+        wklejamy do naszego katalogu assetow javascript
+  * Nastepnie podepniemy do naszej strony:
