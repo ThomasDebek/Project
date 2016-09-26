@@ -519,9 +519,10 @@
       prependTo: '#attach-mobile-menu',
       label: ''                           /* label: ''  USOWAMY NAPIS MENU Z ETYKITY */
     });
+
     /* odliczanie */
     $('.timer').countTo();                // I tutaj dajmy nasze odliczanie  z naszeg pluginu - podpinam sie do klasy timer i wywoluje funkcji countTo
-    /* viewport */
+
 
 
     /* YTPlayer */
@@ -529,9 +530,10 @@
 
 
     // Tu mam pogladowy skrypt
-
+    /* viewport */
     $('.our-team').viewportChecker({      // Zwracamy uwage na wielkosc liter   Tutaj bedziemy mieli nasza klase
-      classToAdd: 'animated slideInLeft'        // Tutaj dodamy nasza animiacjie (opcja ktora nas interesuje powinna dodawac klase  ( tutaj znajduje sie lista dostepnych opcji: https://github.com/dirkgroenen/jQuery-viewport-checker)
+      classToAdd: 'animated slideInLeft',        // Tutaj dodamy nasza animiacjie (opcja ktora nas interesuje powinna dodawac klase  ( tutaj znajduje sie lista dostepnych opcji: https://github.com/dirkgroenen/jQuery-viewport-checker)
+      repeat: true                        // Powtarzanie kiedy pojawi sie w viewporcie
     });                                   // Nas interesuje jedna czyli classToAdd: oraz element ktory wygeneruje nam animacje
                                           // animated - to klasa dodana w naszym laytsie
                                           // a swing - to dostepna animacja z strony : https://daneden.github.io/animate.css/
