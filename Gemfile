@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5.1'
 gem 'mysql2', '>= 0.3.13', '< 0.5'
 
-
+# 9. Gem Semantic - Media_queries
 # Gemik do latwego tworzenia siatki kolumn, chodzi nam o wpelni responsywne elementy na stronie
 gem 'semantic', '~> 1.4', '>= 1.4.1'
 
